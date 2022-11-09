@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace Cetiev2._0
 {
@@ -42,16 +43,41 @@ namespace Cetiev2._0
         {
             string username = txtUtilisateur.Text;
             string password = txtMotdepasse.Text;
-            if (username == "aze" && password == "aze")
+            //if (username == "aze" && password == "aze")
+            //{
+            //    this.Hide();
+            //    Home h = new Home();
+            //    h.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("error !");
+            //}
+            if (username == "" || password == "")
             {
-                this.Hide();
-                Home h = new Home();
-                h.Show();
+                MessageBox.Show("Empty fields !");
             }
             else
             {
-                MessageBox.Show("error !");
-
+                SQLiteConnection con = new SQLiteConnection("Data Source=database.db");
+                con.Open();
+                string query = "SELECT AdminName,Password FROM UserAdmin WHERE AdminName=@username AND Password=@password";
+                SQLiteCommand cmd = new SQLiteCommand(query,con);
+                cmd.Parameters.AddWithValue("@username", txtUtilisateur.Text);
+                cmd.Parameters.AddWithValue("@password", txtMotdepasse.Text);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if(dt.Rows.Count > 0)
+                {
+                    this.Hide();
+                    Home h = new Home();
+                    h.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong name or password !");
+                }
             }
         }
 

@@ -120,7 +120,7 @@ namespace Cetiev2._0
             // SeConnecter
             // 
             this.SeConnecter.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.SeConnecter.Location = new System.Drawing.Point(134, 402);
+            this.SeConnecter.Location = new System.Drawing.Point(134, 411);
             this.SeConnecter.Name = "SeConnecter";
             this.SeConnecter.Size = new System.Drawing.Size(471, 56);
             this.SeConnecter.TabIndex = 5;
