@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Cetiev2._0
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
+            this.Size = new Size(3000, 2500);
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -29,7 +30,7 @@ namespace Cetiev2._0
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-           
+            txtMotdepasse.UseSystemPasswordChar = true;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -37,9 +38,21 @@ namespace Cetiev2._0
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SeConnecter_Click(object sender, EventArgs e)
         {
+            string username = txtUtilisateur.Text;
+            string password = txtMotdepasse.Text;
+            if (username == "aze" && password == "aze")
+            {
+                this.Hide();
+                Home h = new Home();
+                h.Show();
+            }
+            else
+            {
+                MessageBox.Show("error !");
 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -60,6 +73,7 @@ namespace Cetiev2._0
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            
             if (ShowMotdepasse.Checked)
             {
                 txtMotdepasse.UseSystemPasswordChar = false;
@@ -67,9 +81,12 @@ namespace Cetiev2._0
             else
             {
                 txtMotdepasse.UseSystemPasswordChar = true;
-            }
-                
+            }            
+        }
 
+        private void QuitterBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
