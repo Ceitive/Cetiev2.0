@@ -36,6 +36,9 @@
     <None Update="Cetiev2.0.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="System - Copy.Data.SQLite.EF6.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="System.Data.SQLite.EF6.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

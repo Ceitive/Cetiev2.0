@@ -74,7 +74,7 @@ namespace Cetiev2._0
             this.ShowMotdepasse.Font = new System.Drawing.Font("Segoe UI Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ShowMotdepasse.Location = new System.Drawing.Point(316, 379);
             this.ShowMotdepasse.Name = "ShowMotdepasse";
-            this.ShowMotdepasse.Size = new System.Drawing.Size(50, 17);
+            this.ShowMotdepasse.Size = new System.Drawing.Size(73, 25);
             this.ShowMotdepasse.TabIndex = 9;
             this.ShowMotdepasse.Text = "Show";
             this.ShowMotdepasse.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@ namespace Cetiev2._0
             // 
             this.txtUtilisateur.Location = new System.Drawing.Point(316, 264);
             this.txtUtilisateur.Name = "txtUtilisateur";
-            this.txtUtilisateur.Size = new System.Drawing.Size(279, 32);
+            this.txtUtilisateur.Size = new System.Drawing.Size(279, 45);
             this.txtUtilisateur.TabIndex = 8;
             // 
             // label2
@@ -102,7 +102,7 @@ namespace Cetiev2._0
             this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(146, 272);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 21);
+            this.label2.Size = new System.Drawing.Size(128, 32);
             this.label2.TabIndex = 7;
             this.label2.Text = "Utilisateur :";
             // 
@@ -132,7 +132,7 @@ namespace Cetiev2._0
             // 
             this.txtMotdepasse.Location = new System.Drawing.Point(316, 328);
             this.txtMotdepasse.Name = "txtMotdepasse";
-            this.txtMotdepasse.Size = new System.Drawing.Size(279, 32);
+            this.txtMotdepasse.Size = new System.Drawing.Size(279, 45);
             this.txtMotdepasse.TabIndex = 4;
             this.txtMotdepasse.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -142,7 +142,7 @@ namespace Cetiev2._0
             this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(146, 336);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 21);
+            this.label3.Size = new System.Drawing.Size(167, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Mot de passe :";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -154,7 +154,7 @@ namespace Cetiev2._0
             this.label1.Location = new System.Drawing.Point(134, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 41);
+            this.label1.Size = new System.Drawing.Size(471, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenue M. AABAR";
             // 
@@ -170,7 +170,7 @@ namespace Cetiev2._0
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(1370, 749);
