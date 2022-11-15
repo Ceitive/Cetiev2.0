@@ -30,6 +30,7 @@ namespace Cetiev2._0
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog file = new OpenFileDialog(); //open dialog to choose file
+            
             if (file.ShowDialog() == DialogResult.OK) //if there is a file chosen by the user
             {
                 string fileExt = Path.GetExtension(file.FileName); //get the file extension
@@ -37,6 +38,7 @@ namespace Cetiev2._0
                 {
                     try
                     {
+                        textBox1.Text = file.FileName;
                         DataTable dtExcel = ReadExcel(file.FileName); //read excel file
                         dataGridView1.Visible = true;
                         dataGridView1.DataSource = dtExcel;
