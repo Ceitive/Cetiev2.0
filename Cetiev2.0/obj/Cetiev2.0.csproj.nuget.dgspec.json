@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Azdin erradi\\source\\repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Azdin erradi\\source\\repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Azdin erradi\\source\\repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
         "projectName": "Cetiev2.0",
-        "projectPath": "C:\\Users\\Azdin erradi\\source\\repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
-        "packagesPath": "C:\\Users\\Azdin erradi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Azdin erradi\\source\\repos\\Cetiev2.0\\Cetiev2.0\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Azdin erradi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -44,6 +40,22 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.7.0-develop00306, )"
+            },
+            "IronXL.Excel": {
+              "target": "Package",
+              "version": "[2022.11.10251, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[4.47.0, )"
+            },
             "System.Data.SQLite": {
               "target": "Package",
               "version": "[1.0.116, )"
@@ -67,7 +79,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
