@@ -91,3 +91,29 @@ C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Text
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\ExcelDataReader.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\IronSoftware.Drawing.Common.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\IronXL.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.Graph.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.Graph.Core.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Azdin erradi\source\repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll

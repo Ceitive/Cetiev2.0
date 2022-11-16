@@ -38,7 +38,7 @@ namespace Cetiev2._0
                 {
                     try
                     {
-                        textBox1.Text = file.FileName;
+                        textBox_file_path.Text = file.FileName;
                         DataTable dtExcel = ReadExcel(file.FileName); //read excel file
                         dataGridView1.Visible = true;
                         dataGridView1.DataSource = dtExcel;
