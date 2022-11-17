@@ -35,7 +35,7 @@ namespace Cetiev2._0
             this.textBox_file_path = new System.Windows.Forms.TextBox();
             this.label_File_path = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Titre_de_projet = new System.Windows.Forms.Label();
+            this.label_Titre_de_projet = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Label_Recherche_par_référence = new System.Windows.Forms.Label();
             this.Label_Entrez_la_référence = new System.Windows.Forms.Label();
@@ -133,16 +133,16 @@ namespace Cetiev2._0
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Titre_de_projet
+            // label_Titre_de_projet
             // 
-            this.Titre_de_projet.AutoSize = true;
-            this.Titre_de_projet.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Titre_de_projet.Location = new System.Drawing.Point(790, 22);
-            this.Titre_de_projet.Name = "Titre_de_projet";
-            this.Titre_de_projet.Size = new System.Drawing.Size(311, 52);
-            this.Titre_de_projet.TabIndex = 7;
-            this.Titre_de_projet.Text = "Titre de Projet";
-            this.Titre_de_projet.Click += new System.EventHandler(this.label2_Click);
+            this.label_Titre_de_projet.AutoSize = true;
+            this.label_Titre_de_projet.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_Titre_de_projet.Location = new System.Drawing.Point(790, 22);
+            this.label_Titre_de_projet.Name = "label_Titre_de_projet";
+            this.label_Titre_de_projet.Size = new System.Drawing.Size(311, 52);
+            this.label_Titre_de_projet.TabIndex = 7;
+            this.label_Titre_de_projet.Text = "Titre de Projet";
+            this.label_Titre_de_projet.Click += new System.EventHandler(this.label2_Click);
             // 
             // dateTimePicker1
             // 
@@ -476,7 +476,7 @@ namespace Cetiev2._0
             this.Controls.Add(this.Label_Entrez_la_référence);
             this.Controls.Add(this.Label_Recherche_par_référence);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.Titre_de_projet);
+            this.Controls.Add(this.label_Titre_de_projet);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label_File_path);
             this.Controls.Add(this.textBox_file_path);
@@ -500,7 +500,7 @@ namespace Cetiev2._0
         private System.Windows.Forms.TextBox textBox_file_path;
         private System.Windows.Forms.Label label_File_path;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label Titre_de_projet;
+        private System.Windows.Forms.Label label_Titre_de_projet;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label Label_Recherche_par_référence;
         private System.Windows.Forms.Label Label_Entrez_la_référence;

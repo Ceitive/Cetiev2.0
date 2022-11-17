@@ -68,6 +68,7 @@ namespace Cetiev2._0
                 SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+                //SQLiteAuthorizerActionCode con = new SQLiteAuthorizerActionCode("data source");
                 if(dt.Rows.Count > 0)
                 {
                     this.Hide();
@@ -78,7 +79,7 @@ namespace Cetiev2._0
                 {
                     MessageBox.Show("Wrong name or password !");
                 }
-            }
+            } 
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -90,8 +91,7 @@ namespace Cetiev2._0
         {
             
         }
-
-
+ 
         private void button3_Click(object sender, EventArgs e)
         {
               
