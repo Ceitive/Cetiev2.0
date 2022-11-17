@@ -18,7 +18,9 @@ namespace Cetiev2._0
         public Home()
         {
             InitializeComponent();
+            
         }
+
 
         private DataTable ReadExcel(string fileName)
         {
