@@ -43,16 +43,6 @@ namespace Cetiev2._0
         {
             string username = txtUtilisateur.Text;
             string password = txtMotdepasse.Text;
-            //if (username == "aze" && password == "aze")
-            //{
-            //    this.Hide();
-            //    Home h = new Home();
-            //    h.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("error !");
-            //}
             if (username == "" || password == "")
             {
                 MessageBox.Show("Empty fields !");
@@ -72,7 +62,7 @@ namespace Cetiev2._0
                 if(dt.Rows.Count > 0)
                 {
                     this.Hide();
-                    Home h = new Home();
+                    Browse h = new Browse();
                     h.Show();
                 }
                 else
