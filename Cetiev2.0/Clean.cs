@@ -7,6 +7,9 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
+using Windows.UI.Xaml.Controls;
+using NPOI.SS.Formula.Functions;
 
 namespace Cetiev2._0
 {
@@ -64,6 +67,74 @@ namespace Cetiev2._0
             this.Hide();
             Browse h = new Browse();
             h.Show();
+        }
+
+        private List<string> getData()
+        {
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Name = dataGridView1.Columns[i].Name.Trim();
+            }
+            var QuantitwColumn = dataGridView1.Columns["Quantity"];
+            int quantityiIndex = dataGridView1.Columns.IndexOf(QuantitwColumn);
+            ////string myvalue = dataGridView1.Rows[index].Cells[index].Value.ToString();
+            //string myvalue = dataGridView1[0, 0].Value.ToString();
+            //MessageBox.Show(myvalue);
+
+            List<string> list = dataGridView1.Rows
+                       .OfType<DataGridViewRow>()
+                       .Where(x => x.Cells[quantityiIndex].Value != null)
+                       .Select(x => x.Cells[quantityiIndex].Value.ToString())
+                       .ToList();
+            return list;
+        }
+
+        private List<string> getRef()
+        {
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Name = dataGridView1.Columns[i].Name.Trim();
+            }
+            var QuantitwColumn = dataGridView1.Columns["Reference PSA"];
+            int quantityiIndex = dataGridView1.Columns.IndexOf(QuantitwColumn);
+
+            List<string> list = dataGridView1.Rows
+                       .OfType<DataGridViewRow>()
+                       .Where(x => x.Cells[quantityiIndex].Value != null)
+                       .Select(x => x.Cells[quantityiIndex].Value.ToString())
+                       .ToList();
+            return list;
+        }
+
+        private void Button_Upload_Click(object sender, EventArgs e)
+        {
+            List<string> list = getData();
+            List<string> refList = getRef();
+            int rownum = dataGridView2.RowCount;
+
+            dataGridView2.RowCount = list.Count;
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView2.Rows[i].SetValues(list[i]);
+            }
+            dataGridView2.RowCount = refList.Count;
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView2.Rows[i].SetValues(refList[i]);
+            }
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+    }
+    public static class DataGridHelper
+    {
+        public static object GetCellValueFromColumnHeader(this DataGridViewCellCollection CellCollection, string HeaderText)
+        {
+            return CellCollection.Cast<DataGridViewCell>().First(c => c.OwningColumn.HeaderText == HeaderText).Value;
         }
     }
 }

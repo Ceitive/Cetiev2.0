@@ -56,9 +56,17 @@
               "target": "Package",
               "version": "[4.47.0, )"
             },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
             "System.Data.SQLite": {
               "target": "Package",
               "version": "[1.0.116, )"
+            },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[4.6.19, )"
             }
           },
           "imports": [

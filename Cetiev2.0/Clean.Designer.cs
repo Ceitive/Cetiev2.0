@@ -39,7 +39,14 @@ namespace Cetiev2._0
             this.Button_browse = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rayonnage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Consumé = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox_entrez_nom_de_prjt
@@ -93,27 +100,30 @@ namespace Cetiev2._0
             // 
             // Button_Clean
             // 
-            this.Button_Clean.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Button_Clean.BackColor = System.Drawing.Color.Lime;
             this.Button_Clean.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Button_Clean.ForeColor = System.Drawing.Color.White;
             this.Button_Clean.Location = new System.Drawing.Point(784, 561);
             this.Button_Clean.Margin = new System.Windows.Forms.Padding(2);
             this.Button_Clean.Name = "Button_Clean";
             this.Button_Clean.Size = new System.Drawing.Size(85, 25);
             this.Button_Clean.TabIndex = 29;
-            this.Button_Clean.Text = "Clean";
+            this.Button_Clean.Text = "Upload";
             this.Button_Clean.UseVisualStyleBackColor = false;
             // 
             // Button_Upload
             // 
-            this.Button_Upload.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Button_Upload.BackColor = System.Drawing.Color.Blue;
             this.Button_Upload.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Button_Upload.ForeColor = System.Drawing.Color.White;
             this.Button_Upload.Location = new System.Drawing.Point(675, 561);
             this.Button_Upload.Margin = new System.Windows.Forms.Padding(2);
             this.Button_Upload.Name = "Button_Upload";
             this.Button_Upload.Size = new System.Drawing.Size(90, 25);
             this.Button_Upload.TabIndex = 28;
-            this.Button_Upload.Text = "Upload";
+            this.Button_Upload.Text = "Clean";
             this.Button_Upload.UseVisualStyleBackColor = false;
+            this.Button_Upload.Click += new System.EventHandler(this.Button_Upload_Click);
             // 
             // Button_browse
             // 
@@ -130,14 +140,18 @@ namespace Cetiev2._0
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(41, 88);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1306, 290);
+            this.dataGridView1.Size = new System.Drawing.Size(579, 285);
             this.dataGridView1.TabIndex = 35;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -149,11 +163,61 @@ namespace Cetiev2._0
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Reference,
+            this.Quantity,
+            this.Description,
+            this.Rayonnage,
+            this.Consumé});
+            this.dataGridView2.Location = new System.Drawing.Point(703, 88);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.Size = new System.Drawing.Size(546, 285);
+            this.dataGridView2.TabIndex = 37;
+            // 
+            // Reference
+            // 
+            this.Reference.HeaderText = "Reference";
+            this.Reference.Name = "Reference";
+            this.Reference.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
+            // 
+            // Rayonnage
+            // 
+            this.Rayonnage.HeaderText = "Rayonnage";
+            this.Rayonnage.Name = "Rayonnage";
+            this.Rayonnage.ReadOnly = true;
+            // 
+            // Consumé
+            // 
+            this.Consumé.HeaderText = "Consumé";
+            this.Consumé.Name = "Consumé";
+            this.Consumé.ReadOnly = true;
+            // 
             // Clean
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1421, 701);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox_entrez_nom_de_prjt);
@@ -168,6 +232,7 @@ namespace Cetiev2._0
             this.Text = "Clean";
             this.Load += new System.EventHandler(this.Clean_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +250,11 @@ namespace Cetiev2._0
         private System.Windows.Forms.Button Button_browse;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Reference;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rayonnage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Consumé;
     }
 }
