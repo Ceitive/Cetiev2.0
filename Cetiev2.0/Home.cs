@@ -74,5 +74,12 @@ namespace Cetiev2._0
         {
 
         }
+
+        private void button_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Browse back = new Browse();
+            back.Show();
+        }
     }
 }

@@ -62,10 +62,10 @@ namespace Cetiev2._0
             this.panel1.Controls.Add(this.txtMotdepasse);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(314, 177);
+            this.panel1.Location = new System.Drawing.Point(599, 193);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(630, 495);
+            this.panel1.Size = new System.Drawing.Size(619, 491);
             this.panel1.TabIndex = 1;
             // 
             // ShowMotdepasse
@@ -119,13 +119,15 @@ namespace Cetiev2._0
             // 
             // SeConnecter
             // 
-            this.SeConnecter.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.SeConnecter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SeConnecter.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.SeConnecter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.SeConnecter.Location = new System.Drawing.Point(134, 411);
             this.SeConnecter.Name = "SeConnecter";
             this.SeConnecter.Size = new System.Drawing.Size(471, 56);
             this.SeConnecter.TabIndex = 5;
             this.SeConnecter.Text = "Se connecter";
-            this.SeConnecter.UseVisualStyleBackColor = true;
+            this.SeConnecter.UseVisualStyleBackColor = false;
             this.SeConnecter.Click += new System.EventHandler(this.SeConnecter_Click);
             // 
             // txtMotdepasse
@@ -161,9 +163,9 @@ namespace Cetiev2._0
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cetiev2._0.Properties.Resources._1554374594171_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(377, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(703, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(474, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(530, 259);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
