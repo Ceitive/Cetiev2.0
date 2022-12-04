@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Linq;
 using Windows.UI.Xaml.Controls;
 using NPOI.SS.Formula.Functions;
+using Aspose.Cells;
 
 namespace Cetiev2._0
 {
@@ -69,7 +70,7 @@ namespace Cetiev2._0
             h.Show();
         }
 
-        private List<string> getData()
+        private List<string> getQuantity()
         {
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
@@ -106,21 +107,51 @@ namespace Cetiev2._0
             return list;
         }
 
+        private List<string> getDescription()
+        {
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Name = dataGridView1.Columns[i].Name.Trim();
+            }
+            var QuantitwColumn = dataGridView1.Columns["Description EN"];
+            int quantityiIndex = dataGridView1.Columns.IndexOf(QuantitwColumn);
+
+            List<string> list = dataGridView1.Rows
+                       .OfType<DataGridViewRow>()
+                       .Where(x => x.Cells[quantityiIndex].Value != null)
+                       .Select(x => x.Cells[quantityiIndex].Value.ToString())
+                       .ToList();
+            return list;
+        }
+
         private void Button_Upload_Click(object sender, EventArgs e)
         {
-            List<string> list = getData();
+            List<string> Quantlist = getQuantity();
             List<string> refList = getRef();
+            List<string> descList = getDescription();
             int rownum = dataGridView2.RowCount;
 
-            dataGridView2.RowCount = list.Count;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                dataGridView2.Rows[i].SetValues(list[i]);
-            }
             dataGridView2.RowCount = refList.Count;
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
-                dataGridView2.Rows[i].SetValues(refList[i]);
+                dataGridView2[0, i].Value = refList[i];
+            }
+            dataGridView2.RowCount = Quantlist.Count;
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView2[1, i].Value = Quantlist[i];
+            }
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView2[2, i].Value = descList[i];
+            }
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView2[4, i].Value = 0;
+            }
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView2[5, i].Value = Quantlist[i];
             }
 
         }

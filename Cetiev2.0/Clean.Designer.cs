@@ -45,6 +45,7 @@ namespace Cetiev2._0
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rayonnage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Consumé = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LeReste = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button_back_clean = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -52,18 +53,20 @@ namespace Cetiev2._0
             // 
             // textBox_entrez_nom_de_prjt
             // 
-            this.textBox_entrez_nom_de_prjt.Location = new System.Drawing.Point(1050, 762);
+            this.textBox_entrez_nom_de_prjt.Location = new System.Drawing.Point(735, 457);
+            this.textBox_entrez_nom_de_prjt.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_entrez_nom_de_prjt.Name = "textBox_entrez_nom_de_prjt";
-            this.textBox_entrez_nom_de_prjt.Size = new System.Drawing.Size(191, 31);
+            this.textBox_entrez_nom_de_prjt.Size = new System.Drawing.Size(135, 23);
             this.textBox_entrez_nom_de_prjt.TabIndex = 34;
             // 
             // label_entrez_nom_de_prjt
             // 
             this.label_entrez_nom_de_prjt.AutoSize = true;
             this.label_entrez_nom_de_prjt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_nom_de_prjt.Location = new System.Drawing.Point(804, 762);
+            this.label_entrez_nom_de_prjt.Location = new System.Drawing.Point(563, 457);
+            this.label_entrez_nom_de_prjt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_entrez_nom_de_prjt.Name = "label_entrez_nom_de_prjt";
-            this.label_entrez_nom_de_prjt.Size = new System.Drawing.Size(252, 32);
+            this.label_entrez_nom_de_prjt.Size = new System.Drawing.Size(162, 21);
             this.label_entrez_nom_de_prjt.TabIndex = 33;
             this.label_entrez_nom_de_prjt.Text = "Entrez nom de projet :";
             // 
@@ -72,9 +75,10 @@ namespace Cetiev2._0
             this.label_Ajouter_et_nettoyer_un_prjt.AutoSize = true;
             this.label_Ajouter_et_nettoyer_un_prjt.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label_Ajouter_et_nettoyer_un_prjt.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_Ajouter_et_nettoyer_un_prjt.Location = new System.Drawing.Point(813, 700);
+            this.label_Ajouter_et_nettoyer_un_prjt.Location = new System.Drawing.Point(569, 420);
+            this.label_Ajouter_et_nettoyer_un_prjt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_Ajouter_et_nettoyer_un_prjt.Name = "label_Ajouter_et_nettoyer_un_prjt";
-            this.label_Ajouter_et_nettoyer_un_prjt.Size = new System.Drawing.Size(428, 45);
+            this.label_Ajouter_et_nettoyer_un_prjt.Size = new System.Drawing.Size(303, 30);
             this.label_Ajouter_et_nettoyer_un_prjt.TabIndex = 32;
             this.label_Ajouter_et_nettoyer_un_prjt.Text = "Ajouter et nettoyer un projet";
             // 
@@ -82,17 +86,19 @@ namespace Cetiev2._0
             // 
             this.label_File_path.AutoSize = true;
             this.label_File_path.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_File_path.Location = new System.Drawing.Point(804, 816);
+            this.label_File_path.Location = new System.Drawing.Point(563, 490);
+            this.label_File_path.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_File_path.Name = "label_File_path";
-            this.label_File_path.Size = new System.Drawing.Size(118, 32);
+            this.label_File_path.Size = new System.Drawing.Size(76, 21);
             this.label_File_path.TabIndex = 31;
             this.label_File_path.Text = "File path :";
             // 
             // textBox_file_path
             // 
-            this.textBox_file_path.Location = new System.Drawing.Point(931, 816);
+            this.textBox_file_path.Location = new System.Drawing.Point(652, 490);
+            this.textBox_file_path.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_file_path.Name = "textBox_file_path";
-            this.textBox_file_path.Size = new System.Drawing.Size(310, 31);
+            this.textBox_file_path.Size = new System.Drawing.Size(218, 23);
             this.textBox_file_path.TabIndex = 30;
             // 
             // Button_Clean
@@ -100,9 +106,10 @@ namespace Cetiev2._0
             this.Button_Clean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_Clean.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Clean.ForeColor = System.Drawing.Color.White;
-            this.Button_Clean.Location = new System.Drawing.Point(1120, 894);
+            this.Button_Clean.Location = new System.Drawing.Point(784, 536);
+            this.Button_Clean.Margin = new System.Windows.Forms.Padding(2);
             this.Button_Clean.Name = "Button_Clean";
-            this.Button_Clean.Size = new System.Drawing.Size(121, 42);
+            this.Button_Clean.Size = new System.Drawing.Size(85, 25);
             this.Button_Clean.TabIndex = 29;
             this.Button_Clean.Text = "Upload";
             this.Button_Clean.UseVisualStyleBackColor = false;
@@ -112,9 +119,10 @@ namespace Cetiev2._0
             this.Button_Upload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_Upload.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Upload.ForeColor = System.Drawing.Color.White;
-            this.Button_Upload.Location = new System.Drawing.Point(964, 894);
+            this.Button_Upload.Location = new System.Drawing.Point(675, 536);
+            this.Button_Upload.Margin = new System.Windows.Forms.Padding(2);
             this.Button_Upload.Name = "Button_Upload";
-            this.Button_Upload.Size = new System.Drawing.Size(129, 42);
+            this.Button_Upload.Size = new System.Drawing.Size(90, 25);
             this.Button_Upload.TabIndex = 28;
             this.Button_Upload.Text = "Clean";
             this.Button_Upload.UseVisualStyleBackColor = false;
@@ -125,9 +133,10 @@ namespace Cetiev2._0
             this.Button_browse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_browse.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_browse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_browse.Location = new System.Drawing.Point(804, 894);
+            this.Button_browse.Location = new System.Drawing.Point(563, 536);
+            this.Button_browse.Margin = new System.Windows.Forms.Padding(2);
             this.Button_browse.Name = "Button_browse";
-            this.Button_browse.Size = new System.Drawing.Size(133, 42);
+            this.Button_browse.Size = new System.Drawing.Size(93, 25);
             this.Button_browse.TabIndex = 27;
             this.Button_browse.Text = "Browse";
             this.Button_browse.UseVisualStyleBackColor = false;
@@ -138,21 +147,21 @@ namespace Cetiev2._0
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 34);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(892, 598);
+            this.dataGridView1.Size = new System.Drawing.Size(624, 359);
             this.dataGridView1.TabIndex = 35;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1799, 1048);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(1259, 629);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 50);
+            this.button1.Size = new System.Drawing.Size(87, 30);
             this.button1.TabIndex = 36;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -160,7 +169,6 @@ namespace Cetiev2._0
             // 
             // dataGridView2
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -168,14 +176,13 @@ namespace Cetiev2._0
             this.Quantity,
             this.Description,
             this.Rayonnage,
-            this.Consumé});
-            this.dataGridView2.Location = new System.Drawing.Point(1050, 57);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Consumé,
+            this.LeReste});
+            this.dataGridView2.Location = new System.Drawing.Point(703, 34);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(815, 598);
+            this.dataGridView2.Size = new System.Drawing.Size(570, 359);
             this.dataGridView2.TabIndex = 37;
             // 
             // Reference
@@ -183,7 +190,6 @@ namespace Cetiev2._0
             this.Reference.HeaderText = "Reference";
             this.Reference.MinimumWidth = 8;
             this.Reference.Name = "Reference";
-            this.Reference.ReadOnly = true;
             this.Reference.Width = 150;
             // 
             // Quantity
@@ -191,7 +197,6 @@ namespace Cetiev2._0
             this.Quantity.HeaderText = "Quantity";
             this.Quantity.MinimumWidth = 8;
             this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
             this.Quantity.Width = 150;
             // 
             // Description
@@ -199,7 +204,6 @@ namespace Cetiev2._0
             this.Description.HeaderText = "Description";
             this.Description.MinimumWidth = 8;
             this.Description.Name = "Description";
-            this.Description.ReadOnly = true;
             this.Description.Width = 150;
             // 
             // Rayonnage
@@ -207,7 +211,6 @@ namespace Cetiev2._0
             this.Rayonnage.HeaderText = "Rayonnage";
             this.Rayonnage.MinimumWidth = 8;
             this.Rayonnage.Name = "Rayonnage";
-            this.Rayonnage.ReadOnly = true;
             this.Rayonnage.Width = 150;
             // 
             // Consumé
@@ -215,17 +218,22 @@ namespace Cetiev2._0
             this.Consumé.HeaderText = "Consumé";
             this.Consumé.MinimumWidth = 8;
             this.Consumé.Name = "Consumé";
-            this.Consumé.ReadOnly = true;
             this.Consumé.Width = 150;
+            // 
+            // LeReste
+            // 
+            this.LeReste.HeaderText = "Le reste";
+            this.LeReste.Name = "LeReste";
             // 
             // button_back_clean
             // 
             this.button_back_clean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_back_clean.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_back_clean.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_back_clean.Location = new System.Drawing.Point(12, 936);
+            this.button_back_clean.Location = new System.Drawing.Point(8, 562);
+            this.button_back_clean.Margin = new System.Windows.Forms.Padding(2);
             this.button_back_clean.Name = "button_back_clean";
-            this.button_back_clean.Size = new System.Drawing.Size(133, 42);
+            this.button_back_clean.Size = new System.Drawing.Size(93, 25);
             this.button_back_clean.TabIndex = 38;
             this.button_back_clean.Text = "Back";
             this.button_back_clean.UseVisualStyleBackColor = false;
@@ -233,10 +241,10 @@ namespace Cetiev2._0
             // 
             // Clean
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.ClientSize = new System.Drawing.Size(1347, 630);
             this.Controls.Add(this.button_back_clean);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
@@ -249,7 +257,6 @@ namespace Cetiev2._0
             this.Controls.Add(this.Button_Clean);
             this.Controls.Add(this.Button_Upload);
             this.Controls.Add(this.Button_browse);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Clean";
             this.Text = "Clean";
             this.Load += new System.EventHandler(this.Clean_Load);
@@ -279,5 +286,6 @@ namespace Cetiev2._0
         private System.Windows.Forms.DataGridViewTextBoxColumn Rayonnage;
         private System.Windows.Forms.DataGridViewTextBoxColumn Consumé;
         private System.Windows.Forms.Button button_back_clean;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LeReste;
     }
 }

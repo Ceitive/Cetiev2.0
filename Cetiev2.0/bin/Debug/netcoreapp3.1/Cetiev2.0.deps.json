@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Cetiev2.0/1.0.0": {
         "dependencies": {
+          "Aspose.Cells": "22.11.0",
           "DocumentFormat.OpenXml": "2.18.0",
           "ExcelDataReader": "3.7.0-develop00306",
           "IronXL.Excel": "2022.11.10251",
@@ -19,6 +20,19 @@
         },
         "runtime": {
           "Cetiev2.0.dll": {}
+        }
+      },
+      "Aspose.Cells/22.11.0": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.1",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.Cells.dll": {
+            "assemblyVersion": "22.11.0.0",
+            "fileVersion": "22.11.0.0"
+          }
         }
       },
       "Azure.Core/1.25.0": {
@@ -1224,6 +1238,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Aspose.Cells/22.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Lgfb97Upun8E5go6v1eA6U00CezgPimh20WN/hyn+QD97Qsbfld9Apo9jcV6AtPdsHM6HV/5NMMB342bcpxObA==",
+      "path": "aspose.cells/22.11.0",
+      "hashPath": "aspose.cells.22.11.0.nupkg.sha512"
     },
     "Azure.Core/1.25.0": {
       "type": "package",

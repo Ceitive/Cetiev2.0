@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Aspose.Cells/22.11.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0",
+          "System.Security.Cryptography.Pkcs": "5.0.1",
+          "System.Text.Encoding.CodePages": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Aspose.Cells.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.Cells.dll": {}
+        }
+      },
       "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
@@ -1709,6 +1723,32 @@
     }
   },
   "libraries": {
+    "Aspose.Cells/22.11.0": {
+      "sha512": "Lgfb97Upun8E5go6v1eA6U00CezgPimh20WN/hyn+QD97Qsbfld9Apo9jcV6AtPdsHM6HV/5NMMB342bcpxObA==",
+      "type": "package",
+      "path": "aspose.cells/22.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Help/Aspose.Cells For .NET Documentation.chm",
+        "Help/Aspose.Cells.GridJs for .NETSTANDARD Documentation.chm",
+        "License/Aspose_End-User-License-Agreement.txt",
+        "License/thirdpartylicenses.Aspose.Cells.for.NET.pdf",
+        "aspose.cells.22.11.0.nupkg.sha512",
+        "aspose.cells.nuspec",
+        "images/aspose_cells-for-net.png",
+        "lib/net40-client/Aspose.Cells.dll",
+        "lib/net40-client/Aspose.Cells.xml",
+        "lib/net40/Aspose.Cells.dll",
+        "lib/net40/Aspose.Cells.xml",
+        "lib/net6.0-windows7.0/Aspose.Cells.dll",
+        "lib/net6.0-windows7.0/Aspose.Cells.xml",
+        "lib/net6.0/Aspose.Cells.dll",
+        "lib/net6.0/Aspose.Cells.xml",
+        "lib/netstandard2.0/Aspose.Cells.dll",
+        "lib/netstandard2.0/Aspose.Cells.xml"
+      ]
+    },
     "Azure.Core/1.25.0": {
       "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
@@ -7091,6 +7131,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Aspose.Cells >= 22.11.0",
       "DocumentFormat.OpenXml >= 2.18.0",
       "ExcelDataReader >= 3.7.0-develop00306",
       "IronXL.Excel >= 2022.11.10251",
@@ -7102,25 +7143,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Azdin erradi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Cetiev\\aazeddineerradi\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
       "projectName": "Cetiev2.0",
-      "projectPath": "E:\\Cetiev\\aazeddineerradi\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
-      "packagesPath": "C:\\Users\\Azdin erradi\\.nuget\\packages\\",
-      "outputPath": "E:\\Cetiev\\aazeddineerradi\\Cetiev2.0\\Cetiev2.0\\obj\\",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\Cetiev2.0.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\Cetiev2.0\\Cetiev2.0\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Azdin erradi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7145,6 +7181,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Aspose.Cells": {
+            "target": "Package",
+            "version": "[22.11.0, )"
+          },
           "DocumentFormat.OpenXml": {
             "target": "Package",
             "version": "[2.18.0, )"
@@ -7196,7 +7236,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
