@@ -126,16 +126,32 @@ namespace Cetiev2._0
 
         private void Button_Upload_Click(object sender, EventArgs e)
         {
+            // Duplicate ref
+            //string removeduplicate = dataGridView2.Rows[0].Cells[0].Text;
+            //for (int i = 1; 1 < dataGridView2.Rows.Count; i++)
+            //{
+            //    if (dataGridView2.Rows[i].Cells[0].Text == removeduplicate)
+            //    {
+            //        dataGridView2.Rows[i].Cells[0].Text = string.Empty;
+            //    }
+            //    else
+            //    {
+            //        removeduplicate = dataGridView2.Rows[i].Cells[0].Text;  
+            //    }
+            //}
+
             List<string> Quantlist = getQuantity();
             List<string> refList = getRef();
             List<string> descList = getDescription();
             int rownum = dataGridView2.RowCount;
+            refList = refList.Distinct().ToList<string>();
 
             dataGridView2.RowCount = refList.Count;
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
                 dataGridView2[0, i].Value = refList[i];
             }
+            
             dataGridView2.RowCount = Quantlist.Count;
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
@@ -145,7 +161,7 @@ namespace Cetiev2._0
             {
                 dataGridView2[2, i].Value = descList[i];
             }
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            for (int i = 0; i < descList.Count; i++) 
             {
                 dataGridView2[4, i].Value = 0;
             }
@@ -153,7 +169,6 @@ namespace Cetiev2._0
             {
                 dataGridView2[5, i].Value = Quantlist[i];
             }
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
