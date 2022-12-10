@@ -13,6 +13,7 @@
     <PackageReference Include="ExcelDataReader" Version="3.7.0-develop00306" />
     <PackageReference Include="IronXL.Excel" Version="2022.11.10251" />
     <PackageReference Include="Microsoft.Graph" Version="4.47.0" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="NPOI" Version="2.6.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
     <PackageReference Include="System.Text.Json" Version="7.0.0" />

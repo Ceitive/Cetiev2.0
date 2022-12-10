@@ -11,6 +11,7 @@ using System.Linq;
 using Windows.UI.Xaml.Controls;
 using NPOI.SS.Formula.Functions;
 using Aspose.Cells;
+using Microsoft.Office.Interop.Excel;
 
 namespace Cetiev2._0
 {
@@ -20,7 +21,7 @@ namespace Cetiev2._0
         {
             InitializeComponent();
         }
-        private DataTable ReadExcel(string fileName)
+        private System.Data.DataTable ReadExcel(string fileName)
         {
             WorkBook workbook = WorkBook.Load(fileName);
             WorkSheet sheet = workbook.DefaultWorkSheet;
@@ -38,7 +39,7 @@ namespace Cetiev2._0
                     try
                     {
                         textBox_file_path.Text = file.FileName;
-                        DataTable dtExcel = ReadExcel(file.FileName); //read excel file
+                        System.Data.DataTable dtExcel = ReadExcel(file.FileName); //read excel file
                         dataGridView1.Visible = true;
                         dataGridView1.DataSource = dtExcel;
                         if (dataGridView1.DataSource != null)
@@ -76,11 +77,9 @@ namespace Cetiev2._0
             {
                 dataGridView1.Columns[i].Name = dataGridView1.Columns[i].Name.Trim();
             }
+
             var QuantitwColumn = dataGridView1.Columns["Quantity"];
             int quantityiIndex = dataGridView1.Columns.IndexOf(QuantitwColumn);
-            ////string myvalue = dataGridView1.Rows[index].Cells[index].Value.ToString();
-            //string myvalue = dataGridView1[0, 0].Value.ToString();
-            //MessageBox.Show(myvalue);
 
             List<string> list = dataGridView1.Rows
                        .OfType<DataGridViewRow>()
@@ -143,32 +142,52 @@ namespace Cetiev2._0
             List<string> Quantlist = getQuantity();
             List<string> refList = getRef();
             List<string> descList = getDescription();
-            int rownum = dataGridView2.RowCount;
-            refList = refList.Distinct().ToList<string>();
+            List<string> resteList = Quantlist;
+            List<string> consumerList = resteList;
+
+            
+            //refList = refList.Distinct().ToList<string>();
 
             dataGridView2.RowCount = refList.Count;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            for (int i = 0; i < refList.Count; i++)
             {
                 dataGridView2[0, i].Value = refList[i];
             }
-            
+
             dataGridView2.RowCount = Quantlist.Count;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            for (int i = 0; i < Quantlist.Count; i++)
             {
                 dataGridView2[1, i].Value = Quantlist[i];
             }
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            for (int i = 0; i < resteList.Count; i++)
+            {
+                dataGridView2[5, i].Value = resteList[i];
+            }
+            // replaceto 0
+            for (int i = 0; i < consumerList.Count; i++)
+            {
+                
+                if (!String.IsNullOrEmpty(dataGridView2[0, i].Value as String))
+                {
+                    consumerList[i] = "0"; 
+                }
+                else
+                {
+                    break;
+                }
+                
+            }
+
+            for (int i = 0; i < descList.Count; i++)
             {
                 dataGridView2[2, i].Value = descList[i];
             }
-            for (int i = 0; i < descList.Count; i++) 
+            for (int i = 0; i < consumerList.Count; i++) 
             {
-                dataGridView2[4, i].Value = 0;
+                dataGridView2[4, i].Value = consumerList[i];
             }
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                dataGridView2[5, i].Value = Quantlist[i];
-            }
+
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
