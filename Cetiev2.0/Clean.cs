@@ -81,6 +81,7 @@ namespace Cetiev2._0
             var QuantitwColumn = dataGridView1.Columns["Quantity"];
             int quantityiIndex = dataGridView1.Columns.IndexOf(QuantitwColumn);
 
+            
             List<string> list = dataGridView1.Rows
                        .OfType<DataGridViewRow>()
                        .Where(x => x.Cells[quantityiIndex].Value != null)
@@ -122,6 +123,18 @@ namespace Cetiev2._0
                        .ToList();
             return list;
         }
+        private string RemoveSpecialCharacters(string str)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (char c in str)
+            {
+                if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '.' || c == '_')
+                {
+                    sb.Append(c);
+                }
+            }
+            return sb.ToString();
+        }
 
         private void Button_Upload_Click(object sender, EventArgs e)
         {
@@ -145,8 +158,9 @@ namespace Cetiev2._0
             List<string> resteList = Quantlist;
             List<string> consumerList = resteList;
 
-            
+
             //refList = refList.Distinct().ToList<string>();
+            //descList = descList.Distinct().ToList<string>();
 
             dataGridView2.RowCount = refList.Count;
             for (int i = 0; i < refList.Count; i++)
@@ -187,7 +201,25 @@ namespace Cetiev2._0
                 dataGridView2[4, i].Value = consumerList[i];
             }
 
-            
+            for (int i = 0; i < dataGridView2.RowCount - 1; i++) //compare data
+            {
+                var Row = dataGridView2.Rows[i];
+                string abc = Row.Cells[0].Value.ToString();
+
+                for (int j = i + 1; j < dataGridView2.RowCount; j++)
+                {
+                    var Row2 = dataGridView2.Rows[j];
+                    string def = Row2.Cells[0].Value.ToString();
+                    if (abc == def)
+                    {
+                        int result = int.Parse(Row.Cells[1].Value.ToString()) + int.Parse(Row2.Cells[1].Value.ToString());
+                        Row.Cells[1].Value = result.ToString();
+                        dataGridView2.Rows.Remove(Row2);
+                        j--;
+                    }
+                }
+            }
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -200,6 +232,11 @@ namespace Cetiev2._0
             this.Close();
             Browse back = new Browse();
             back.Show(); 
+        }
+
+        private void RemoveDupBtn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     public static class DataGridHelper
