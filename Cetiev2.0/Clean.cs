@@ -210,12 +210,16 @@ namespace Cetiev2._0
                 {
                     var Row2 = dataGridView2.Rows[j];
                     string def = Row2.Cells[0].Value.ToString();
-                    if (abc == def)
+                    if (abc != "" && def != "")
                     {
-                        int result = int.Parse(Row.Cells[1].Value.ToString()) + int.Parse(Row2.Cells[1].Value.ToString());
-                        Row.Cells[1].Value = result.ToString();
-                        dataGridView2.Rows.Remove(Row2);
-                        j--;
+                        if (abc == def)
+                        {
+                            int result = int.Parse(Row.Cells[1].Value.ToString()) + int.Parse(Row2.Cells[1].Value.ToString());
+                            Row.Cells[1].Value = result.ToString();
+                            Row.Cells[5].Value = result.ToString();
+                            dataGridView2.Rows.Remove(Row2);
+                            j--;
+                        }
                     }
                 }
             }
