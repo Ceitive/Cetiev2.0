@@ -81,5 +81,19 @@ namespace Cetiev2._0
             Browse back = new Browse();
             back.Show();
         }
+
+        private void button_Quantité_restante_de_piéces_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            QRestant h = new QRestant();
+            h.Show();
+        }
+
+        private void button_Quantité_de_pièces_consommées_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            QConsume h = new QConsume();
+            h.Show();
+        }
     }
 }

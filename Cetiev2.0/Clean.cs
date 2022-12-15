@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls;
 using NPOI.SS.Formula.Functions;
 using Aspose.Cells;
 using Microsoft.Office.Interop.Excel;
+using System.Data.SQLite;
 
 namespace Cetiev2._0
 {
@@ -240,6 +241,28 @@ namespace Cetiev2._0
 
         private void RemoveDupBtn_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void Button_Save_Click(object sender, EventArgs e)
+        {
+            // Create a new SQLiteConnection and open it
+            SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
+            conn.Open();
+            // Create a new SQLiteCommand and set its CommandText property
+            SQLiteCommand cmd = new SQLiteCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "INSERT INTO table_name (column1, column2, column3) VALUES (@val1, @val2, @val3)";
+            // Create a new SQLiteCommand and set its CommandText property
+            // change cmd to cm (com by aazeddine)
+            SQLiteCommand cm = new SQLiteCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "INSERT INTO table_name (column1, column2, column3) VALUES (@val1, @val2, @val3)";
+            // Create SQLiteParameter objects for each of the columns in the INSERT statement
+            SQLiteParameter p1 = new SQLiteParameter("@val1", System.Data.DbType.Int32);
+            p1.Value = dataGridView1.Rows[0].Cells[0].Value;
+            cmd.Parameters.Add(p1);
+            
             
         }
     }

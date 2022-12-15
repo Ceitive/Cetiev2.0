@@ -41,6 +41,7 @@ namespace Cetiev2._0
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1_effacer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,6 +54,7 @@ namespace Cetiev2._0
             // panel1
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.button1_effacer);
             this.panel1.Controls.Add(this.ShowMotdepasse);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.txtUtilisateur);
@@ -62,7 +64,7 @@ namespace Cetiev2._0
             this.panel1.Controls.Add(this.txtMotdepasse);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(599, 193);
+            this.panel1.Location = new System.Drawing.Point(616, 319);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(619, 491);
@@ -122,9 +124,9 @@ namespace Cetiev2._0
             this.SeConnecter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SeConnecter.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SeConnecter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SeConnecter.Location = new System.Drawing.Point(134, 411);
+            this.SeConnecter.Location = new System.Drawing.Point(372, 410);
             this.SeConnecter.Name = "SeConnecter";
-            this.SeConnecter.Size = new System.Drawing.Size(471, 56);
+            this.SeConnecter.Size = new System.Drawing.Size(223, 56);
             this.SeConnecter.TabIndex = 5;
             this.SeConnecter.Text = "Se connecter";
             this.SeConnecter.UseVisualStyleBackColor = false;
@@ -163,19 +165,32 @@ namespace Cetiev2._0
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cetiev2._0.Properties.Resources._1554374594171_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(703, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(721, 127);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(530, 259);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // button1_effacer
+            // 
+            this.button1_effacer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1_effacer.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button1_effacer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1_effacer.Location = new System.Drawing.Point(146, 410);
+            this.button1_effacer.Name = "button1_effacer";
+            this.button1_effacer.Size = new System.Drawing.Size(223, 56);
+            this.button1_effacer.TabIndex = 10;
+            this.button1_effacer.Text = "Effacer";
+            this.button1_effacer.UseVisualStyleBackColor = false;
+            this.button1_effacer.Click += new System.EventHandler(this.button1_effacer_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1370, 888);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -205,6 +220,7 @@ namespace Cetiev2._0
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox ShowMotdepasse;
+        private System.Windows.Forms.Button button1_effacer;
     }
 }
 

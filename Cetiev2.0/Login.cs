@@ -104,5 +104,11 @@ namespace Cetiev2._0
         {
             this.Close();
         }
+
+        private void button1_effacer_Click(object sender, EventArgs e)
+        {
+            txtUtilisateur.Text = "";
+            txtMotdepasse.Text = "";
+        }
     }
 }
