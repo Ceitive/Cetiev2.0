@@ -8,30 +8,23 @@ using System.Windows.Forms;
 
 namespace Cetiev2._0
 {
-    public partial class QConsume : Form
+    public partial class PrintConsume : Form
     {
-        public QConsume()
+        public PrintConsume()
         {
             InitializeComponent();
-        }
-
-        private void QConsumé_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button_back_Click(object sender, EventArgs e)
         {
             this.Close();
-            Home back = new Home();
+            QConsume back = new QConsume();
             back.Show();
         }
 
-        private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
+        private void label9_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            PrintConsume h = new PrintConsume();
-            h.Show();
+
         }
     }
 }

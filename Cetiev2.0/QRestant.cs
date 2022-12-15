@@ -24,7 +24,14 @@ namespace Cetiev2._0
 
         private void QRestant_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button_Imprimer_QRestant_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrintRestant h = new PrintRestant();
+            h.Show();
         }
     }
 }

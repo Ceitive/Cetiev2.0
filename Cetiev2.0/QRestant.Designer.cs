@@ -121,12 +121,13 @@ namespace Cetiev2._0
             this.button_Imprimer_QRestant.TabIndex = 41;
             this.button_Imprimer_QRestant.Text = "Imprimer";
             this.button_Imprimer_QRestant.UseVisualStyleBackColor = false;
+            this.button_Imprimer_QRestant.Click += new System.EventHandler(this.button_Imprimer_QRestant_Click);
             // 
             // QRestant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1915, 1178);
+            this.ClientSize = new System.Drawing.Size(1915, 1050);
             this.Controls.Add(this.button_Imprimer_QRestant);
             this.Controls.Add(this.button_back_QReastant);
             this.Controls.Add(this.Button_Rechercher_REF_QRestant);

@@ -381,3 +381,5 @@ E:\New clone Cetiev\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2.0.pdb
 E:\New clone Cetiev\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2.0.genruntimeconfig.cache
 E:\New clone Cetiev\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.QRestant.resources
 E:\New clone Cetiev\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.QConsume.resources
+E:\New clone Cetiev\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.PrintConsume.resources
+E:\New clone Cetiev\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.PrintRestant.resources
