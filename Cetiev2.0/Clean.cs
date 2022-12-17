@@ -13,6 +13,7 @@ using NPOI.SS.Formula.Functions;
 using Aspose.Cells;
 using Microsoft.Office.Interop.Excel;
 using System.Data.SQLite;
+using Microsoft.PowerBI.Api.Models;
 
 namespace Cetiev2._0
 {
@@ -139,29 +140,11 @@ namespace Cetiev2._0
 
         private void Button_Upload_Click(object sender, EventArgs e)
         {
-            // Duplicate ref
-            //string removeduplicate = dataGridView2.Rows[0].Cells[0].Text;
-            //for (int i = 1; 1 < dataGridView2.Rows.Count; i++)
-            //{
-            //    if (dataGridView2.Rows[i].Cells[0].Text == removeduplicate)
-            //    {
-            //        dataGridView2.Rows[i].Cells[0].Text = string.Empty;
-            //    }
-            //    else
-            //    {
-            //        removeduplicate = dataGridView2.Rows[i].Cells[0].Text;  
-            //    }
-            //}
-
             List<string> Quantlist = getQuantity();
             List<string> refList = getRef();
             List<string> descList = getDescription();
             List<string> resteList = Quantlist;
             List<string> consumerList = resteList;
-
-
-            //refList = refList.Distinct().ToList<string>();
-            //descList = descList.Distinct().ToList<string>();
 
             dataGridView2.RowCount = refList.Count;
             for (int i = 0; i < refList.Count; i++)
@@ -246,24 +229,21 @@ namespace Cetiev2._0
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
-            // Create a new SQLiteConnection and open it
-            SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
-            conn.Open();
-            // Create a new SQLiteCommand and set its CommandText property
-            SQLiteCommand cmd = new SQLiteCommand();
-            cmd.Connection = conn;
-            cmd.CommandText = "INSERT INTO table_name (column1, column2, column3) VALUES (@val1, @val2, @val3)";
-            // Create a new SQLiteCommand and set its CommandText property
-            // change cmd to cm (com by aazeddine)
-            SQLiteCommand cm = new SQLiteCommand();
-            cmd.Connection = conn;
-            cmd.CommandText = "INSERT INTO table_name (column1, column2, column3) VALUES (@val1, @val2, @val3)";
-            // Create SQLiteParameter objects for each of the columns in the INSERT statement
-            SQLiteParameter p1 = new SQLiteParameter("@val1", System.Data.DbType.Int32);
-            p1.Value = dataGridView1.Rows[0].Cells[0].Value;
-            cmd.Parameters.Add(p1);
-            
-            
+
+            for (int i = 0; i < dataGridView2.Rows.Count; i++)
+            {
+                SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
+                SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO ProjectDetails (Reference, Desciption, Quantity, Rayonnage, Consummation, Rest, ProjectName) 
+                VALUES ('" + dataGridView2.Rows[i].Cells[0].Value + "','" + dataGridView2.Rows[i].Cells[2].Value + "','"
+                + dataGridView2.Rows[i].Cells[1].Value + "','" + dataGridView2.Rows[i].Cells[3].Value +
+                "','" + dataGridView2.Rows[i].Cells[4].Value + "','" + dataGridView2.Rows[i].Cells[5].Value +"','"+
+                textBoxProjectName.Text + "')", conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            MessageBox.Show("les données ont été insérées dans la base de données avec succès");
+            dataGridView2.Rows.Clear();
         }
     }
     public static class DataGridHelper
