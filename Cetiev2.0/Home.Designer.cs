@@ -30,20 +30,15 @@ namespace Cetiev2._0
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rayonnage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Consummation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.Label_Recherche_par_référence = new System.Windows.Forms.Label();
-            this.Label_Entrez_la_référence = new System.Windows.Forms.Label();
-            this.TextBox_Entrez_REF = new System.Windows.Forms.TextBox();
-            this.Button_Rechercher_REF = new System.Windows.Forms.Button();
             this.label_recherche_par_prjt = new System.Windows.Forms.Label();
-            this.label_Entrez_le_prjt = new System.Windows.Forms.Label();
-            this.textBox_Entrez_le_prjt = new System.Windows.Forms.TextBox();
-            this.button_chercher_prjt = new System.Windows.Forms.Button();
-            this.Ajouter_Modifier_un_rayonnage = new System.Windows.Forms.Label();
-            this.Ajouter_une_rayonnage = new System.Windows.Forms.Label();
-            this.textBox_Ajouter_rayonnage = new System.Windows.Forms.TextBox();
-            this.button_Ajouter_rayonnage = new System.Windows.Forms.Button();
-            this.Button_modifier_rayonnage = new System.Windows.Forms.Button();
             this.label_information_consommateurs = new System.Windows.Forms.Label();
             this.label_entrez_REF = new System.Windows.Forms.Label();
             this.label_Nombre_des_pcs = new System.Windows.Forms.Label();
@@ -57,172 +52,104 @@ namespace Cetiev2._0
             this.textBox_entrez_IE_IU = new System.Windows.Forms.TextBox();
             this.textBox_Entrez_nom_complet = new System.Windows.Forms.TextBox();
             this.button_back = new System.Windows.Forms.Button();
+            this.ActualiserBtn = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.SearchBtn = new System.Windows.Forms.Button();
+            this.Export = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 48);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Reference,
+            this.Description,
+            this.Quantity,
+            this.Rayonnage,
+            this.Consummation,
+            this.Rest,
+            this.ProjectName});
+            this.dataGridView1.Location = new System.Drawing.Point(8, 29);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1895, 463);
+            this.dataGridView1.Size = new System.Drawing.Size(1326, 278);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Reference
+            // 
+            this.Reference.HeaderText = "Reference";
+            this.Reference.Name = "Reference";
+            this.Reference.ReadOnly = true;
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // Rayonnage
+            // 
+            this.Rayonnage.HeaderText = "Rayonnage";
+            this.Rayonnage.Name = "Rayonnage";
+            // 
+            // Consummation
+            // 
+            this.Consummation.HeaderText = "Consummation";
+            this.Consummation.Name = "Consummation";
+            this.Consummation.ReadOnly = true;
+            // 
+            // Rest
+            // 
+            this.Rest.HeaderText = "Rest";
+            this.Rest.Name = "Rest";
+            this.Rest.ReadOnly = true;
+            // 
+            // ProjectName
+            // 
+            this.ProjectName.HeaderText = "Project Name";
+            this.ProjectName.Name = "ProjectName";
+            this.ProjectName.ReadOnly = true;
+            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 11);
+            this.dateTimePicker1.Location = new System.Drawing.Point(8, 7);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(315, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(222, 23);
             this.dateTimePicker1.TabIndex = 8;
-            // 
-            // Label_Recherche_par_référence
-            // 
-            this.Label_Recherche_par_référence.AutoSize = true;
-            this.Label_Recherche_par_référence.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Label_Recherche_par_référence.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(395, 664);
-            this.Label_Recherche_par_référence.Name = "Label_Recherche_par_référence";
-            this.Label_Recherche_par_référence.Size = new System.Drawing.Size(362, 45);
-            this.Label_Recherche_par_référence.TabIndex = 9;
-            this.Label_Recherche_par_référence.Text = "Recherche par référence";
-            this.Label_Recherche_par_référence.Click += new System.EventHandler(this.Label_Recherche_par_référence_Click);
-            // 
-            // Label_Entrez_la_référence
-            // 
-            this.Label_Entrez_la_référence.AutoSize = true;
-            this.Label_Entrez_la_référence.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(370, 719);
-            this.Label_Entrez_la_référence.Name = "Label_Entrez_la_référence";
-            this.Label_Entrez_la_référence.Size = new System.Drawing.Size(154, 32);
-            this.Label_Entrez_la_référence.TabIndex = 10;
-            this.Label_Entrez_la_référence.Text = "Entrez le réf :";
-            this.Label_Entrez_la_référence.Click += new System.EventHandler(this.Label_Entrez_la_référence_Click);
-            // 
-            // TextBox_Entrez_REF
-            // 
-            this.TextBox_Entrez_REF.Location = new System.Drawing.Point(530, 722);
-            this.TextBox_Entrez_REF.Name = "TextBox_Entrez_REF";
-            this.TextBox_Entrez_REF.Size = new System.Drawing.Size(248, 31);
-            this.TextBox_Entrez_REF.TabIndex = 11;
-            // 
-            // Button_Rechercher_REF
-            // 
-            this.Button_Rechercher_REF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button_Rechercher_REF.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Button_Rechercher_REF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Rechercher_REF.Location = new System.Drawing.Point(370, 759);
-            this.Button_Rechercher_REF.Name = "Button_Rechercher_REF";
-            this.Button_Rechercher_REF.Size = new System.Drawing.Size(408, 42);
-            this.Button_Rechercher_REF.TabIndex = 12;
-            this.Button_Rechercher_REF.Text = "Chercher";
-            this.Button_Rechercher_REF.UseVisualStyleBackColor = false;
-            this.Button_Rechercher_REF.Click += new System.EventHandler(this.Button_Rechercher_REF_Click);
             // 
             // label_recherche_par_prjt
             // 
             this.label_recherche_par_prjt.AutoSize = true;
             this.label_recherche_par_prjt.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label_recherche_par_prjt.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_recherche_par_prjt.Location = new System.Drawing.Point(414, 516);
+            this.label_recherche_par_prjt.Location = new System.Drawing.Point(37, 330);
+            this.label_recherche_par_prjt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_recherche_par_prjt.Name = "label_recherche_par_prjt";
-            this.label_recherche_par_prjt.Size = new System.Drawing.Size(313, 45);
+            this.label_recherche_par_prjt.Size = new System.Drawing.Size(220, 30);
             this.label_recherche_par_prjt.TabIndex = 14;
             this.label_recherche_par_prjt.Text = "Recherche par projet";
-            // 
-            // label_Entrez_le_prjt
-            // 
-            this.label_Entrez_le_prjt.AutoSize = true;
-            this.label_Entrez_le_prjt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Entrez_le_prjt.Location = new System.Drawing.Point(370, 561);
-            this.label_Entrez_le_prjt.Name = "label_Entrez_le_prjt";
-            this.label_Entrez_le_prjt.Size = new System.Drawing.Size(188, 32);
-            this.label_Entrez_le_prjt.TabIndex = 15;
-            this.label_Entrez_le_prjt.Text = "Entrez le projet :";
-            // 
-            // textBox_Entrez_le_prjt
-            // 
-            this.textBox_Entrez_le_prjt.Location = new System.Drawing.Point(555, 564);
-            this.textBox_Entrez_le_prjt.Name = "textBox_Entrez_le_prjt";
-            this.textBox_Entrez_le_prjt.Size = new System.Drawing.Size(223, 31);
-            this.textBox_Entrez_le_prjt.TabIndex = 16;
-            // 
-            // button_chercher_prjt
-            // 
-            this.button_chercher_prjt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_chercher_prjt.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button_chercher_prjt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_chercher_prjt.Location = new System.Drawing.Point(370, 601);
-            this.button_chercher_prjt.Name = "button_chercher_prjt";
-            this.button_chercher_prjt.Size = new System.Drawing.Size(408, 42);
-            this.button_chercher_prjt.TabIndex = 17;
-            this.button_chercher_prjt.Text = "Chercher";
-            this.button_chercher_prjt.UseVisualStyleBackColor = false;
-            // 
-            // Ajouter_Modifier_un_rayonnage
-            // 
-            this.Ajouter_Modifier_un_rayonnage.AutoSize = true;
-            this.Ajouter_Modifier_un_rayonnage.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Ajouter_Modifier_un_rayonnage.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Ajouter_Modifier_un_rayonnage.Location = new System.Drawing.Point(395, 825);
-            this.Ajouter_Modifier_un_rayonnage.Name = "Ajouter_Modifier_un_rayonnage";
-            this.Ajouter_Modifier_un_rayonnage.Size = new System.Drawing.Size(374, 45);
-            this.Ajouter_Modifier_un_rayonnage.TabIndex = 18;
-            this.Ajouter_Modifier_un_rayonnage.Text = "Aj / Mod Un Rayonnage ";
-            this.Ajouter_Modifier_un_rayonnage.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // Ajouter_une_rayonnage
-            // 
-            this.Ajouter_une_rayonnage.AutoSize = true;
-            this.Ajouter_une_rayonnage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Ajouter_une_rayonnage.Location = new System.Drawing.Point(370, 870);
-            this.Ajouter_une_rayonnage.Name = "Ajouter_une_rayonnage";
-            this.Ajouter_une_rayonnage.Size = new System.Drawing.Size(240, 32);
-            this.Ajouter_une_rayonnage.TabIndex = 19;
-            this.Ajouter_une_rayonnage.Text = "Aj / Mod rayonnage :";
-            // 
-            // textBox_Ajouter_rayonnage
-            // 
-            this.textBox_Ajouter_rayonnage.Location = new System.Drawing.Point(616, 873);
-            this.textBox_Ajouter_rayonnage.Name = "textBox_Ajouter_rayonnage";
-            this.textBox_Ajouter_rayonnage.Size = new System.Drawing.Size(162, 31);
-            this.textBox_Ajouter_rayonnage.TabIndex = 20;
-            // 
-            // button_Ajouter_rayonnage
-            // 
-            this.button_Ajouter_rayonnage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_Ajouter_rayonnage.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button_Ajouter_rayonnage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Ajouter_rayonnage.Location = new System.Drawing.Point(370, 908);
-            this.button_Ajouter_rayonnage.Name = "button_Ajouter_rayonnage";
-            this.button_Ajouter_rayonnage.Size = new System.Drawing.Size(188, 42);
-            this.button_Ajouter_rayonnage.TabIndex = 21;
-            this.button_Ajouter_rayonnage.Text = "Ajouter";
-            this.button_Ajouter_rayonnage.UseVisualStyleBackColor = false;
-            this.button_Ajouter_rayonnage.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // Button_modifier_rayonnage
-            // 
-            this.Button_modifier_rayonnage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Button_modifier_rayonnage.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Button_modifier_rayonnage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_modifier_rayonnage.Location = new System.Drawing.Point(564, 908);
-            this.Button_modifier_rayonnage.Name = "Button_modifier_rayonnage";
-            this.Button_modifier_rayonnage.Size = new System.Drawing.Size(214, 42);
-            this.Button_modifier_rayonnage.TabIndex = 22;
-            this.Button_modifier_rayonnage.Text = "Modifier";
-            this.Button_modifier_rayonnage.UseVisualStyleBackColor = false;
             // 
             // label_information_consommateurs
             // 
             this.label_information_consommateurs.AutoSize = true;
             this.label_information_consommateurs.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label_information_consommateurs.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_information_consommateurs.Location = new System.Drawing.Point(1118, 516);
+            this.label_information_consommateurs.Location = new System.Drawing.Point(783, 310);
+            this.label_information_consommateurs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_information_consommateurs.Name = "label_information_consommateurs";
-            this.label_information_consommateurs.Size = new System.Drawing.Size(441, 45);
+            this.label_information_consommateurs.Size = new System.Drawing.Size(303, 30);
             this.label_information_consommateurs.TabIndex = 27;
             this.label_information_consommateurs.Text = "Informations consommateurs";
             // 
@@ -230,9 +157,10 @@ namespace Cetiev2._0
             // 
             this.label_entrez_REF.AutoSize = true;
             this.label_entrez_REF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_REF.Location = new System.Drawing.Point(1097, 719);
+            this.label_entrez_REF.Location = new System.Drawing.Point(768, 431);
+            this.label_entrez_REF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_entrez_REF.Name = "label_entrez_REF";
-            this.label_entrez_REF.Size = new System.Drawing.Size(137, 32);
+            this.label_entrez_REF.Size = new System.Drawing.Size(90, 21);
             this.label_entrez_REF.TabIndex = 28;
             this.label_entrez_REF.Text = "Entrez RÉF :";
             // 
@@ -240,9 +168,10 @@ namespace Cetiev2._0
             // 
             this.label_Nombre_des_pcs.AutoSize = true;
             this.label_Nombre_des_pcs.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Nombre_des_pcs.Location = new System.Drawing.Point(1097, 672);
+            this.label_Nombre_des_pcs.Location = new System.Drawing.Point(768, 403);
+            this.label_Nombre_des_pcs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_Nombre_des_pcs.Name = "label_Nombre_des_pcs";
-            this.label_Nombre_des_pcs.Size = new System.Drawing.Size(200, 32);
+            this.label_Nombre_des_pcs.Size = new System.Drawing.Size(130, 21);
             this.label_Nombre_des_pcs.TabIndex = 29;
             this.label_Nombre_des_pcs.Text = "Nombre des pcs :";
             // 
@@ -250,9 +179,10 @@ namespace Cetiev2._0
             // 
             this.label_entrez_IE_IU.AutoSize = true;
             this.label_entrez_IE_IU.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_IE_IU.Location = new System.Drawing.Point(1097, 623);
+            this.label_entrez_IE_IU.Location = new System.Drawing.Point(768, 374);
+            this.label_entrez_IE_IU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_entrez_IE_IU.Name = "label_entrez_IE_IU";
-            this.label_entrez_IE_IU.Size = new System.Drawing.Size(162, 32);
+            this.label_entrez_IE_IU.Size = new System.Drawing.Size(105, 21);
             this.label_entrez_IE_IU.TabIndex = 30;
             this.label_entrez_IE_IU.Text = "Entrez IE / IU :";
             // 
@@ -260,9 +190,10 @@ namespace Cetiev2._0
             // 
             this.label_entrez_nom_complet.AutoSize = true;
             this.label_entrez_nom_complet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_nom_complet.Location = new System.Drawing.Point(1097, 576);
+            this.label_entrez_nom_complet.Location = new System.Drawing.Point(768, 346);
+            this.label_entrez_nom_complet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_entrez_nom_complet.Name = "label_entrez_nom_complet";
-            this.label_entrez_nom_complet.Size = new System.Drawing.Size(242, 32);
+            this.label_entrez_nom_complet.Size = new System.Drawing.Size(156, 21);
             this.label_entrez_nom_complet.TabIndex = 31;
             this.label_entrez_nom_complet.Text = "Entrez nom complet :";
             // 
@@ -271,9 +202,10 @@ namespace Cetiev2._0
             this.button_Valider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Valider.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Valider.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Valider.Location = new System.Drawing.Point(1097, 760);
+            this.button_Valider.Location = new System.Drawing.Point(768, 456);
+            this.button_Valider.Margin = new System.Windows.Forms.Padding(2);
             this.button_Valider.Name = "button_Valider";
-            this.button_Valider.Size = new System.Drawing.Size(477, 42);
+            this.button_Valider.Size = new System.Drawing.Size(334, 25);
             this.button_Valider.TabIndex = 32;
             this.button_Valider.Text = "Valider";
             this.button_Valider.UseVisualStyleBackColor = false;
@@ -283,9 +215,10 @@ namespace Cetiev2._0
             this.button_Quantité_restante_de_piéces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Quantité_restante_de_piéces.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Quantité_restante_de_piéces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Quantité_restante_de_piéces.Location = new System.Drawing.Point(1097, 808);
+            this.button_Quantité_restante_de_piéces.Location = new System.Drawing.Point(768, 485);
+            this.button_Quantité_restante_de_piéces.Margin = new System.Windows.Forms.Padding(2);
             this.button_Quantité_restante_de_piéces.Name = "button_Quantité_restante_de_piéces";
-            this.button_Quantité_restante_de_piéces.Size = new System.Drawing.Size(242, 142);
+            this.button_Quantité_restante_de_piéces.Size = new System.Drawing.Size(169, 85);
             this.button_Quantité_restante_de_piéces.TabIndex = 33;
             this.button_Quantité_restante_de_piéces.Text = "Quantité restante de pièces";
             this.button_Quantité_restante_de_piéces.UseVisualStyleBackColor = false;
@@ -296,9 +229,10 @@ namespace Cetiev2._0
             this.button_Quantité_de_pièces_consommées.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Quantité_de_pièces_consommées.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Quantité_de_pièces_consommées.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Quantité_de_pièces_consommées.Location = new System.Drawing.Point(1350, 808);
+            this.button_Quantité_de_pièces_consommées.Location = new System.Drawing.Point(945, 485);
+            this.button_Quantité_de_pièces_consommées.Margin = new System.Windows.Forms.Padding(2);
             this.button_Quantité_de_pièces_consommées.Name = "button_Quantité_de_pièces_consommées";
-            this.button_Quantité_de_pièces_consommées.Size = new System.Drawing.Size(224, 142);
+            this.button_Quantité_de_pièces_consommées.Size = new System.Drawing.Size(157, 85);
             this.button_Quantité_de_pièces_consommées.TabIndex = 34;
             this.button_Quantité_de_pièces_consommées.Text = "Quantité de pièces consommées";
             this.button_Quantité_de_pièces_consommées.UseVisualStyleBackColor = false;
@@ -306,30 +240,34 @@ namespace Cetiev2._0
             // 
             // textBox_Entrez_REF_pour_cons
             // 
-            this.textBox_Entrez_REF_pour_cons.Location = new System.Drawing.Point(1350, 723);
+            this.textBox_Entrez_REF_pour_cons.Location = new System.Drawing.Point(945, 434);
+            this.textBox_Entrez_REF_pour_cons.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Entrez_REF_pour_cons.Name = "textBox_Entrez_REF_pour_cons";
-            this.textBox_Entrez_REF_pour_cons.Size = new System.Drawing.Size(224, 31);
+            this.textBox_Entrez_REF_pour_cons.Size = new System.Drawing.Size(158, 23);
             this.textBox_Entrez_REF_pour_cons.TabIndex = 35;
             // 
             // textBox_Nombre_des_pcs
             // 
-            this.textBox_Nombre_des_pcs.Location = new System.Drawing.Point(1350, 675);
+            this.textBox_Nombre_des_pcs.Location = new System.Drawing.Point(945, 405);
+            this.textBox_Nombre_des_pcs.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Nombre_des_pcs.Name = "textBox_Nombre_des_pcs";
-            this.textBox_Nombre_des_pcs.Size = new System.Drawing.Size(224, 31);
+            this.textBox_Nombre_des_pcs.Size = new System.Drawing.Size(158, 23);
             this.textBox_Nombre_des_pcs.TabIndex = 36;
             // 
             // textBox_entrez_IE_IU
             // 
-            this.textBox_entrez_IE_IU.Location = new System.Drawing.Point(1350, 626);
+            this.textBox_entrez_IE_IU.Location = new System.Drawing.Point(945, 376);
+            this.textBox_entrez_IE_IU.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_entrez_IE_IU.Name = "textBox_entrez_IE_IU";
-            this.textBox_entrez_IE_IU.Size = new System.Drawing.Size(224, 31);
+            this.textBox_entrez_IE_IU.Size = new System.Drawing.Size(158, 23);
             this.textBox_entrez_IE_IU.TabIndex = 37;
             // 
             // textBox_Entrez_nom_complet
             // 
-            this.textBox_Entrez_nom_complet.Location = new System.Drawing.Point(1350, 579);
+            this.textBox_Entrez_nom_complet.Location = new System.Drawing.Point(945, 347);
+            this.textBox_Entrez_nom_complet.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Entrez_nom_complet.Name = "textBox_Entrez_nom_complet";
-            this.textBox_Entrez_nom_complet.Size = new System.Drawing.Size(224, 31);
+            this.textBox_Entrez_nom_complet.Size = new System.Drawing.Size(158, 23);
             this.textBox_Entrez_nom_complet.TabIndex = 38;
             // 
             // button_back
@@ -337,19 +275,80 @@ namespace Cetiev2._0
             this.button_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_back.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_back.Location = new System.Drawing.Point(12, 945);
+            this.button_back.Location = new System.Drawing.Point(8, 567);
+            this.button_back.Margin = new System.Windows.Forms.Padding(2);
             this.button_back.Name = "button_back";
-            this.button_back.Size = new System.Drawing.Size(184, 42);
+            this.button_back.Size = new System.Drawing.Size(129, 25);
             this.button_back.TabIndex = 39;
             this.button_back.Text = "Retour";
             this.button_back.UseVisualStyleBackColor = false;
             this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
+            // ActualiserBtn
+            // 
+            this.ActualiserBtn.BackColor = System.Drawing.Color.Lime;
+            this.ActualiserBtn.Location = new System.Drawing.Point(1239, 332);
+            this.ActualiserBtn.Name = "ActualiserBtn";
+            this.ActualiserBtn.Size = new System.Drawing.Size(96, 35);
+            this.ActualiserBtn.TabIndex = 40;
+            this.ActualiserBtn.Text = "Synchroniser";
+            this.ActualiserBtn.UseVisualStyleBackColor = false;
+            this.ActualiserBtn.Click += new System.EventHandler(this.ActualiserBtn_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Ref",
+            "Project"});
+            this.comboBox1.Location = new System.Drawing.Point(83, 376);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 41;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.searchByRef);
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.searchByRef);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(83, 420);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 23);
+            this.comboBox2.TabIndex = 42;
+            // 
+            // SearchBtn
+            // 
+            this.SearchBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SearchBtn.Location = new System.Drawing.Point(93, 471);
+            this.SearchBtn.Name = "SearchBtn";
+            this.SearchBtn.Size = new System.Drawing.Size(102, 42);
+            this.SearchBtn.TabIndex = 43;
+            this.SearchBtn.Text = "Rechercher";
+            this.SearchBtn.UseVisualStyleBackColor = false;
+            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
+            // 
+            // Export
+            // 
+            this.Export.AutoSize = true;
+            this.Export.Location = new System.Drawing.Point(482, 330);
+            this.Export.Name = "Export";
+            this.Export.Size = new System.Drawing.Size(41, 15);
+            this.Export.TabIndex = 44;
+            this.Export.Text = "Export";
+            this.Export.Click += new System.EventHandler(this.Export_Click);
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.ClientSize = new System.Drawing.Size(1347, 630);
+            this.Controls.Add(this.Export);
+            this.Controls.Add(this.SearchBtn);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ActualiserBtn);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.textBox_Entrez_nom_complet);
             this.Controls.Add(this.textBox_entrez_IE_IU);
@@ -363,21 +362,10 @@ namespace Cetiev2._0
             this.Controls.Add(this.label_Nombre_des_pcs);
             this.Controls.Add(this.label_entrez_REF);
             this.Controls.Add(this.label_information_consommateurs);
-            this.Controls.Add(this.Button_modifier_rayonnage);
-            this.Controls.Add(this.button_Ajouter_rayonnage);
-            this.Controls.Add(this.textBox_Ajouter_rayonnage);
-            this.Controls.Add(this.Ajouter_une_rayonnage);
-            this.Controls.Add(this.Ajouter_Modifier_un_rayonnage);
-            this.Controls.Add(this.button_chercher_prjt);
-            this.Controls.Add(this.textBox_Entrez_le_prjt);
-            this.Controls.Add(this.label_Entrez_le_prjt);
             this.Controls.Add(this.label_recherche_par_prjt);
-            this.Controls.Add(this.Button_Rechercher_REF);
-            this.Controls.Add(this.TextBox_Entrez_REF);
-            this.Controls.Add(this.Label_Entrez_la_référence);
-            this.Controls.Add(this.Label_Recherche_par_référence);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
@@ -388,21 +376,8 @@ namespace Cetiev2._0
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label Label_Recherche_par_référence;
-        private System.Windows.Forms.Label Label_Entrez_la_référence;
-        private System.Windows.Forms.TextBox TextBox_Entrez_REF;
-        private System.Windows.Forms.Button Button_Rechercher_REF;
         private System.Windows.Forms.Label label_recherche_par_prjt;
-        private System.Windows.Forms.Label label_Entrez_le_prjt;
-        private System.Windows.Forms.TextBox textBox_Entrez_le_prjt;
-        private System.Windows.Forms.Button button_chercher_prjt;
-        private System.Windows.Forms.Label Ajouter_Modifier_un_rayonnage;
-        private System.Windows.Forms.Label Ajouter_une_rayonnage;
-        private System.Windows.Forms.TextBox textBox_Ajouter_rayonnage;
-        private System.Windows.Forms.Button button_Ajouter_rayonnage;
-        private System.Windows.Forms.Button Button_modifier_rayonnage;
         private System.Windows.Forms.Label label_information_consommateurs;
         private System.Windows.Forms.Label label_entrez_REF;
         private System.Windows.Forms.Label label_Nombre_des_pcs;
@@ -416,5 +391,18 @@ namespace Cetiev2._0
         private System.Windows.Forms.TextBox textBox_entrez_IE_IU;
         private System.Windows.Forms.TextBox textBox_Entrez_nom_complet;
         private System.Windows.Forms.Button button_back;
+        private System.Windows.Forms.Button ActualiserBtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Reference;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rayonnage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Consummation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rest;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProjectName;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button SearchBtn;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label Export;
     }
 }

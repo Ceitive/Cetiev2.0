@@ -16,7 +16,6 @@ namespace Cetiev2._0
         public Login()
         {
             InitializeComponent();
-            this.Size = new Size(3000, 2500);
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)

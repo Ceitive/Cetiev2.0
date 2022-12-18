@@ -13,12 +13,15 @@
           "ExcelDataReader": "3.7.0-develop00306",
           "IronXL.Excel": "2022.11.10251",
           "Microsoft.Graph": "4.47.0",
-          "Microsoft.Office.Interop.Excel": "15.0.4795.1001",
+          "Microsoft.Office.Interop.Excel": "14.0.0.1",
           "Microsoft.PowerBI.Api": "4.11.0",
           "NPOI": "2.6.0",
           "System.Data.SQLite": "1.0.116",
           "System.Text.Json": "7.0.0",
-          "Uno.UI": "4.6.19"
+          "Uno.UI": "4.6.19",
+          "Microsoft.Office.interop.access.dao": "14.0.0.0",
+          "Interop.LCC11": "1.0.0.0",
+          "Interop.Microsoft.Office.Core": "2.5.0.0"
         },
         "runtime": {
           "Cetiev2.0.dll": {}
@@ -261,11 +264,11 @@
       },
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+      "Microsoft.Office.Interop.Excel/14.0.0.1": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Office.Interop.Excel.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.4795.1000"
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.4756.1000"
           }
         }
       },
@@ -1272,6 +1275,30 @@
             "fileVersion": "255.255.255.255"
           }
         }
+      },
+      "Microsoft.Office.interop.access.dao/14.0.0.0": {
+        "runtime": {
+          "Microsoft.Office.interop.access.dao.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.4760.1000"
+          }
+        }
+      },
+      "Interop.LCC11/1.0.0.0": {
+        "runtime": {
+          "Interop.LCC11.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Interop.Microsoft.Office.Core/2.5.0.0": {
+        "runtime": {
+          "Interop.Microsoft.Office.Core.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
       }
     }
   },
@@ -1442,12 +1469,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+    "Microsoft.Office.Interop.Excel/14.0.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cuvqi/U5MYSM0gvR2l90q0m/urRgmg69EiwP5VWp1RcaJ0YT5G26Va5LaOZ3KJFc22FNihS5CUjeePUp2YpGQA==",
-      "path": "microsoft.office.interop.excel/15.0.4795.1001",
-      "hashPath": "microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
+      "sha512": "sha512-FBSpI2VIFRIomWvR2gniHwfhAYKEBb3ziS4aszqzENbKYOWibjqANFTNiv8V/sUQ1paln54WkkuvGm3Hsrd3WQ==",
+      "path": "microsoft.office.interop.excel/14.0.0.1",
+      "hashPath": "microsoft.office.interop.excel.14.0.0.1.nupkg.sha512"
     },
     "Microsoft.PowerBI.Api/4.11.0": {
       "type": "package",
@@ -2134,6 +2161,21 @@
       "sha512": "sha512-I4a6NRil5DWHB2FbxhPf5aUT0YHfm7ATjlnANuC1KtZh6W6LGPa2NHF8ZIv19gSbdIl5ctCBSmSomck82DykEw==",
       "path": "uno.ui/4.6.19",
       "hashPath": "uno.ui.4.6.19.nupkg.sha512"
+    },
+    "Microsoft.Office.interop.access.dao/14.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interop.LCC11/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interop.Microsoft.Office.Core/2.5.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
