@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\New clone Cetiev\\Cetiev2.0\\Cetiev2.0.csproj": {}
+    "E:\\New clone\\Cetiev2.0\\Cetiev2.0.csproj": {}
   },
   "projects": {
-    "E:\\New clone Cetiev\\Cetiev2.0\\Cetiev2.0.csproj": {
+    "E:\\New clone\\Cetiev2.0\\Cetiev2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\New clone Cetiev\\Cetiev2.0\\Cetiev2.0.csproj",
+        "projectUniqueName": "E:\\New clone\\Cetiev2.0\\Cetiev2.0.csproj",
         "projectName": "Cetiev2.0",
-        "projectPath": "E:\\New clone Cetiev\\Cetiev2.0\\Cetiev2.0.csproj",
+        "projectPath": "E:\\New clone\\Cetiev2.0\\Cetiev2.0.csproj",
         "packagesPath": "C:\\Users\\Azdin erradi\\.nuget\\packages\\",
-        "outputPath": "E:\\New clone Cetiev\\Cetiev2.0\\obj\\",
+        "outputPath": "E:\\New clone\\Cetiev2.0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

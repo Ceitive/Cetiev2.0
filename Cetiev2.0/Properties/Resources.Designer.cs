@@ -183,6 +183,16 @@ namespace Cetiev2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nt {
+            get {
+                object obj = ResourceManager.GetObject("nt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nui {
             get {
                 object obj = ResourceManager.GetObject("nui", resourceCulture);
