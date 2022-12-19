@@ -44,11 +44,13 @@ namespace Cetiev2._0
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -62,7 +64,7 @@ namespace Cetiev2._0
             this.button1_effacer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1_effacer.Location = new System.Drawing.Point(3, 3);
             this.button1_effacer.Name = "button1_effacer";
-            this.button1_effacer.Size = new System.Drawing.Size(212, 56);
+            this.button1_effacer.Size = new System.Drawing.Size(206, 56);
             this.button1_effacer.TabIndex = 10;
             this.button1_effacer.Text = "Effacer";
             this.button1_effacer.UseVisualStyleBackColor = false;
@@ -70,9 +72,10 @@ namespace Cetiev2._0
             // 
             // ShowMotdepasse
             // 
+            this.ShowMotdepasse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ShowMotdepasse.AutoSize = true;
             this.ShowMotdepasse.Font = new System.Drawing.Font("Segoe UI Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShowMotdepasse.Location = new System.Drawing.Point(955, 750);
+            this.ShowMotdepasse.Location = new System.Drawing.Point(158, 3);
             this.ShowMotdepasse.Name = "ShowMotdepasse";
             this.ShowMotdepasse.Size = new System.Drawing.Size(73, 25);
             this.ShowMotdepasse.TabIndex = 9;
@@ -114,7 +117,7 @@ namespace Cetiev2._0
             this.SeConnecter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SeConnecter.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SeConnecter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SeConnecter.Location = new System.Drawing.Point(221, 3);
+            this.SeConnecter.Location = new System.Drawing.Point(215, 3);
             this.SeConnecter.Name = "SeConnecter";
             this.SeConnecter.Size = new System.Drawing.Size(223, 56);
             this.SeConnecter.TabIndex = 5;
@@ -180,13 +183,14 @@ namespace Cetiev2._0
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 2);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(685, 36);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(421, -18);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -198,6 +202,7 @@ namespace Cetiev2._0
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.01806F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.98194F));
@@ -205,7 +210,7 @@ namespace Cetiev2._0
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.txtUtilisateur, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtMotdepasse, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(746, 594);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(467, 523);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -215,27 +220,41 @@ namespace Cetiev2._0
             // 
             // tableLayoutPanel5
             // 
+            this.tableLayoutPanel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel5.Controls.Add(this.button1_effacer, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.SeConnecter, 1, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(742, 794);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(467, 716);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(447, 62);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(443, 62);
             this.tableLayoutPanel5.TabIndex = 10;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.ShowMotdepasse, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(521, 679);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(389, 31);
+            this.tableLayoutPanel1.TabIndex = 11;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(1381, 888);
+            this.ClientSize = new System.Drawing.Size(1376, 888);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel4);
-            this.Controls.Add(this.ShowMotdepasse);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -249,8 +268,9 @@ namespace Cetiev2._0
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -271,6 +291,7 @@ namespace Cetiev2._0
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 
