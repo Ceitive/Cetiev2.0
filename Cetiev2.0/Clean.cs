@@ -21,6 +21,19 @@ namespace Cetiev2._0
         public Clean()
         {
             InitializeComponent();
+
+            //// Set the AutoSize property to true for all controls
+            //foreach (Control control in this.Controls)
+            //{
+            //    control.AutoSize = true;
+            //}
+
+            //// Set the Anchor property for all controls
+            //foreach (Control control in this.Controls)
+            //{
+            //    control.Anchor = AnchorStyles.Top | anchorStyles.Bottom | anchorStyles.Left | anchorStyles.Right;
+            //}
+
         }
         private System.Data.DataTable ReadExcel(string fileName)
         {
@@ -62,8 +75,21 @@ namespace Cetiev2._0
 
         private void Clean_Load(object sender, EventArgs e)
         {
+            //// Set the form's minimum size
+            //this.MinimumSize = new System.Drawing.Size(550, 550);
+
+            //// Set the form's maximum size
+            //this.MaximumSize = new System.Drawing.Size(1990, 1080);
+
+            //// Set the form's start position to the center of the screen
+            //this.StartPosition = FormStartPosition.CenterScreen;
+
+            //// Set the form's border style to fixed dialog
+            //this.FormBorderStyle = FormBorderStyle.FixedDialog;
 
         }
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -264,6 +290,11 @@ namespace Cetiev2._0
             cmd.Parameters.Add(p1);
             
             
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     public static class DataGridHelper
