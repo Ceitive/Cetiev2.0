@@ -37,24 +37,28 @@ namespace Cetiev2._0
             this.Label_Recherche_par_référence = new System.Windows.Forms.Label();
             this.button_back_QReastant = new System.Windows.Forms.Button();
             this.button_Imprimer_QRestant = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 59);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 9);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1895, 617);
+            this.dataGridView1.Size = new System.Drawing.Size(1885, 650);
             this.dataGridView1.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(1691, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(315, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(212, 31);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // Button_Rechercher_REF_QRestant
@@ -62,7 +66,7 @@ namespace Cetiev2._0
             this.Button_Rechercher_REF_QRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_Rechercher_REF_QRestant.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Rechercher_REF_QRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Rechercher_REF_QRestant.Location = new System.Drawing.Point(753, 792);
+            this.Button_Rechercher_REF_QRestant.Location = new System.Drawing.Point(842, 859);
             this.Button_Rechercher_REF_QRestant.Name = "Button_Rechercher_REF_QRestant";
             this.Button_Rechercher_REF_QRestant.Size = new System.Drawing.Size(408, 42);
             this.Button_Rechercher_REF_QRestant.TabIndex = 16;
@@ -71,7 +75,7 @@ namespace Cetiev2._0
             // 
             // TextBox_Entrez_REF
             // 
-            this.TextBox_Entrez_REF.Location = new System.Drawing.Point(913, 746);
+            this.TextBox_Entrez_REF.Location = new System.Drawing.Point(1002, 813);
             this.TextBox_Entrez_REF.Name = "TextBox_Entrez_REF";
             this.TextBox_Entrez_REF.Size = new System.Drawing.Size(248, 31);
             this.TextBox_Entrez_REF.TabIndex = 15;
@@ -80,7 +84,7 @@ namespace Cetiev2._0
             // 
             this.Label_Entrez_la_référence.AutoSize = true;
             this.Label_Entrez_la_référence.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(753, 743);
+            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(842, 810);
             this.Label_Entrez_la_référence.Name = "Label_Entrez_la_référence";
             this.Label_Entrez_la_référence.Size = new System.Drawing.Size(154, 32);
             this.Label_Entrez_la_référence.TabIndex = 14;
@@ -91,7 +95,7 @@ namespace Cetiev2._0
             this.Label_Recherche_par_référence.AutoSize = true;
             this.Label_Recherche_par_référence.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Label_Recherche_par_référence.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(778, 688);
+            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(867, 755);
             this.Label_Recherche_par_référence.Name = "Label_Recherche_par_référence";
             this.Label_Recherche_par_référence.Size = new System.Drawing.Size(362, 45);
             this.Label_Recherche_par_référence.TabIndex = 13;
@@ -102,9 +106,9 @@ namespace Cetiev2._0
             this.button_back_QReastant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_back_QReastant.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_back_QReastant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_back_QReastant.Location = new System.Drawing.Point(12, 936);
+            this.button_back_QReastant.Location = new System.Drawing.Point(12, 12);
             this.button_back_QReastant.Name = "button_back_QReastant";
-            this.button_back_QReastant.Size = new System.Drawing.Size(184, 42);
+            this.button_back_QReastant.Size = new System.Drawing.Size(85, 42);
             this.button_back_QReastant.TabIndex = 40;
             this.button_back_QReastant.Text = "Retour";
             this.button_back_QReastant.UseVisualStyleBackColor = false;
@@ -115,7 +119,7 @@ namespace Cetiev2._0
             this.button_Imprimer_QRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Imprimer_QRestant.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Imprimer_QRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Imprimer_QRestant.Location = new System.Drawing.Point(821, 855);
+            this.button_Imprimer_QRestant.Location = new System.Drawing.Point(910, 922);
             this.button_Imprimer_QRestant.Name = "button_Imprimer_QRestant";
             this.button_Imprimer_QRestant.Size = new System.Drawing.Size(275, 42);
             this.button_Imprimer_QRestant.TabIndex = 41;
@@ -123,11 +127,26 @@ namespace Cetiev2._0
             this.button_Imprimer_QRestant.UseVisualStyleBackColor = false;
             this.button_Imprimer_QRestant.Click += new System.EventHandler(this.button_Imprimer_QRestant_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 70);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1891, 669);
+            this.tableLayoutPanel1.TabIndex = 42;
+            // 
             // QRestant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1915, 1050);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button_Imprimer_QRestant);
             this.Controls.Add(this.button_back_QReastant);
             this.Controls.Add(this.Button_Rechercher_REF_QRestant);
@@ -135,11 +154,11 @@ namespace Cetiev2._0
             this.Controls.Add(this.Label_Entrez_la_référence);
             this.Controls.Add(this.Label_Recherche_par_référence);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "QRestant";
             this.Text = "QRestant";
             this.Load += new System.EventHandler(this.QRestant_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +174,6 @@ namespace Cetiev2._0
         private System.Windows.Forms.Label Label_Recherche_par_référence;
         private System.Windows.Forms.Button button_back_QReastant;
         private System.Windows.Forms.Button button_Imprimer_QRestant;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

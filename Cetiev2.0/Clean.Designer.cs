@@ -57,7 +57,7 @@ namespace Cetiev2._0
             // textBox_entrez_nom_de_prjt
             // 
             this.textBox_entrez_nom_de_prjt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox_entrez_nom_de_prjt.Location = new System.Drawing.Point(1020, 940);
+            this.textBox_entrez_nom_de_prjt.Location = new System.Drawing.Point(993, 970);
             this.textBox_entrez_nom_de_prjt.Name = "textBox_entrez_nom_de_prjt";
             this.textBox_entrez_nom_de_prjt.Size = new System.Drawing.Size(262, 31);
             this.textBox_entrez_nom_de_prjt.TabIndex = 34;
@@ -67,7 +67,7 @@ namespace Cetiev2._0
             this.label_entrez_nom_de_prjt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_entrez_nom_de_prjt.AutoSize = true;
             this.label_entrez_nom_de_prjt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_nom_de_prjt.Location = new System.Drawing.Point(762, 937);
+            this.label_entrez_nom_de_prjt.Location = new System.Drawing.Point(735, 967);
             this.label_entrez_nom_de_prjt.Name = "label_entrez_nom_de_prjt";
             this.label_entrez_nom_de_prjt.Size = new System.Drawing.Size(252, 32);
             this.label_entrez_nom_de_prjt.TabIndex = 33;
@@ -80,7 +80,7 @@ namespace Cetiev2._0
             this.label_Ajouter_et_nettoyer_un_prjt.BackColor = System.Drawing.SystemColors.Control;
             this.label_Ajouter_et_nettoyer_un_prjt.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label_Ajouter_et_nettoyer_un_prjt.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_Ajouter_et_nettoyer_un_prjt.Location = new System.Drawing.Point(806, 876);
+            this.label_Ajouter_et_nettoyer_un_prjt.Location = new System.Drawing.Point(764, 902);
             this.label_Ajouter_et_nettoyer_un_prjt.Name = "label_Ajouter_et_nettoyer_un_prjt";
             this.label_Ajouter_et_nettoyer_un_prjt.Size = new System.Drawing.Size(428, 45);
             this.label_Ajouter_et_nettoyer_un_prjt.TabIndex = 32;
@@ -91,7 +91,7 @@ namespace Cetiev2._0
             this.label_File_path.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_File_path.AutoSize = true;
             this.label_File_path.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_File_path.Location = new System.Drawing.Point(761, 988);
+            this.label_File_path.Location = new System.Drawing.Point(734, 1018);
             this.label_File_path.Name = "label_File_path";
             this.label_File_path.Size = new System.Drawing.Size(118, 32);
             this.label_File_path.TabIndex = 31;
@@ -100,7 +100,7 @@ namespace Cetiev2._0
             // textBox_file_path
             // 
             this.textBox_file_path.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox_file_path.Location = new System.Drawing.Point(886, 991);
+            this.textBox_file_path.Location = new System.Drawing.Point(859, 1021);
             this.textBox_file_path.Name = "textBox_file_path";
             this.textBox_file_path.Size = new System.Drawing.Size(396, 31);
             this.textBox_file_path.TabIndex = 30;
@@ -111,7 +111,7 @@ namespace Cetiev2._0
             this.Button_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_Save.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Save.ForeColor = System.Drawing.Color.White;
-            this.Button_Save.Location = new System.Drawing.Point(1131, 1042);
+            this.Button_Save.Location = new System.Drawing.Point(1104, 1072);
             this.Button_Save.Name = "Button_Save";
             this.Button_Save.Size = new System.Drawing.Size(132, 42);
             this.Button_Save.TabIndex = 29;
@@ -125,7 +125,7 @@ namespace Cetiev2._0
             this.Button_Upload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_Upload.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Upload.ForeColor = System.Drawing.Color.White;
-            this.Button_Upload.Location = new System.Drawing.Point(963, 1042);
+            this.Button_Upload.Location = new System.Drawing.Point(936, 1072);
             this.Button_Upload.Name = "Button_Upload";
             this.Button_Upload.Size = new System.Drawing.Size(132, 42);
             this.Button_Upload.TabIndex = 28;
@@ -139,7 +139,7 @@ namespace Cetiev2._0
             this.Button_browse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_browse.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_browse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_browse.Location = new System.Drawing.Point(791, 1042);
+            this.Button_browse.Location = new System.Drawing.Point(764, 1072);
             this.Button_browse.Name = "Button_browse";
             this.Button_browse.Size = new System.Drawing.Size(132, 42);
             this.Button_browse.TabIndex = 27;
@@ -153,22 +153,21 @@ namespace Cetiev2._0
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 17);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 16);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(918, 691);
+            this.dataGridView1.Size = new System.Drawing.Size(931, 663);
             this.dataGridView1.TabIndex = 35;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button_back_clean
             // 
-            this.button_back_clean.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_back_clean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_back_clean.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_back_clean.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_back_clean.Location = new System.Drawing.Point(3, 4);
+            this.button_back_clean.Location = new System.Drawing.Point(3, 3);
             this.button_back_clean.Name = "button_back_clean";
             this.button_back_clean.Size = new System.Drawing.Size(75, 42);
             this.button_back_clean.TabIndex = 38;
@@ -189,12 +188,12 @@ namespace Cetiev2._0
             this.Rayonnage,
             this.Consumé,
             this.LeReste});
-            this.dataGridView2.Location = new System.Drawing.Point(975, 17);
+            this.dataGridView2.Location = new System.Drawing.Point(984, 12);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(923, 690);
+            this.dataGridView2.Size = new System.Drawing.Size(948, 672);
             this.dataGridView2.TabIndex = 37;
             // 
             // Reference
@@ -241,17 +240,18 @@ namespace Cetiev2._0
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 958F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 973F));
             this.tableLayoutPanel1.Controls.Add(this.dataGridView2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(43, 153);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 68);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1916, 725);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1945, 696);
             this.tableLayoutPanel1.TabIndex = 39;
             // 
             // tableLayoutPanel2
@@ -271,7 +271,7 @@ namespace Cetiev2._0
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(2001, 1186);
+            this.ClientSize = new System.Drawing.Size(2001, 1252);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label_Ajouter_et_nettoyer_un_prjt);
