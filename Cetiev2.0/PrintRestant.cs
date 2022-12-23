@@ -21,5 +21,32 @@ namespace Cetiev2._0
             QRestant back = new QRestant();
             back.Show();
         }
+
+        private void Button_Confirm_Printing_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Bitmap objBmp = new Bitmap(this.dataGridView1.Width, this.dataGridView1.Height);
+            dataGridView1.DrawToBitmap(objBmp, new Rectangle(0, 0, this.dataGridView1.Width, this.dataGridView1.Height));
+            e.Graphics.DrawImage(objBmp, 250, 200);
+
+            //e.Graphics.DrawString(dataGridView1.Text, new Font("Verdana", 20, FontStyle.Bold), Brushes.Black, new Point(300, 30));
+            //e.Graphics.DrawString(panel2.Text, new Font("Verdana", 20, FontStyle.Bold), Brushes.Black, new Point(300, 30));
+            //e.Graphics.DrawString(label6.Text, new Font("Verdana", 10, FontStyle.Bold), Brushes.Black, new Point(300, 30));
+            //e.Graphics.DrawString(label5.Text, new Font("Verdana", 20, FontStyle.Bold), Brushes.Black, new Point(300, 30));
+            //e.Graphics.DrawString(label4.Text, new Font("Verdana", 20, FontStyle.Bold), Brushes.Black, new Point(300, 30));
+            //e.Graphics.DrawString("CETIEV".Text, new Font("Verdana", 20, FontStyle.Bold), Brushes.Black, new Point(300, 30));
+            
+
+        }
+
+        private void PrintRestant_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

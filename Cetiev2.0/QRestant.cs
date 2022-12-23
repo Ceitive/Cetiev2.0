@@ -32,6 +32,7 @@ namespace Cetiev2._0
             this.Hide();
             PrintRestant h = new PrintRestant();
             h.Show();
+
         }
     }
 }

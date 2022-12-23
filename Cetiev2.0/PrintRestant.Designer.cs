@@ -29,8 +29,10 @@ namespace Cetiev2._0
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrintRestant));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,7 +46,8 @@ namespace Cetiev2._0
             this.label1 = new System.Windows.Forms.Label();
             this.Button_Confirm_Printing = new System.Windows.Forms.Button();
             this.button_back_PrintConsume = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,15 +75,27 @@ namespace Cetiev2._0
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(748, 18);
+            this.panel2.Location = new System.Drawing.Point(333, 18);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(516, 797);
+            this.panel2.Size = new System.Drawing.Size(1493, 797);
             this.panel2.TabIndex = 44;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(33, 241);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(803, 356);
+            this.dataGridView1.TabIndex = 53;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(17, 592);
+            this.label11.Location = new System.Drawing.Point(276, 637);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(488, 25);
             this.label11.TabIndex = 52;
@@ -90,7 +105,7 @@ namespace Cetiev2._0
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(17, 567);
+            this.label10.Location = new System.Drawing.Point(276, 612);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(486, 25);
             this.label10.TabIndex = 51;
@@ -100,7 +115,7 @@ namespace Cetiev2._0
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(17, 617);
+            this.label9.Location = new System.Drawing.Point(276, 662);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(488, 25);
             this.label9.TabIndex = 50;
@@ -111,7 +126,7 @@ namespace Cetiev2._0
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(243, 669);
+            this.label8.Location = new System.Drawing.Point(276, 700);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(253, 21);
             this.label8.TabIndex = 49;
@@ -121,7 +136,7 @@ namespace Cetiev2._0
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(17, 200);
+            this.label7.Location = new System.Drawing.Point(276, 200);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 25);
             this.label7.TabIndex = 48;
@@ -132,7 +147,7 @@ namespace Cetiev2._0
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label6.Location = new System.Drawing.Point(34, 757);
+            this.label6.Location = new System.Drawing.Point(276, 757);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(462, 12);
             this.label6.TabIndex = 47;
@@ -144,7 +159,7 @@ namespace Cetiev2._0
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label5.Location = new System.Drawing.Point(125, 769);
+            this.label5.Location = new System.Drawing.Point(367, 769);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(265, 12);
             this.label5.TabIndex = 46;
@@ -155,7 +170,7 @@ namespace Cetiev2._0
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(138, 781);
+            this.label4.Location = new System.Drawing.Point(380, 781);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(231, 12);
             this.label4.TabIndex = 45;
@@ -165,7 +180,7 @@ namespace Cetiev2._0
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(165, 166);
+            this.label3.Location = new System.Drawing.Point(424, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 28);
             this.label3.TabIndex = 44;
@@ -175,7 +190,7 @@ namespace Cetiev2._0
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(151, 127);
+            this.label2.Location = new System.Drawing.Point(410, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 28);
             this.label2.TabIndex = 43;
@@ -185,7 +200,7 @@ namespace Cetiev2._0
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(7, 92);
+            this.label1.Location = new System.Drawing.Point(257, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(507, 25);
             this.label1.TabIndex = 0;
@@ -202,6 +217,7 @@ namespace Cetiev2._0
             this.Button_Confirm_Printing.TabIndex = 45;
             this.Button_Confirm_Printing.Text = "Confirmer l\'impression";
             this.Button_Confirm_Printing.UseVisualStyleBackColor = false;
+            this.Button_Confirm_Printing.Click += new System.EventHandler(this.Button_Confirm_Printing_Click);
             // 
             // button_back_PrintConsume
             // 
@@ -216,27 +232,32 @@ namespace Cetiev2._0
             this.button_back_PrintConsume.UseVisualStyleBackColor = false;
             this.button_back_PrintConsume.Click += new System.EventHandler(this.button_back_PrintConsume_Click);
             // 
-            // dataGridView1
+            // printDocument1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 246);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(479, 306);
-            this.dataGridView1.TabIndex = 53;
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // PrintRestant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1448, 1050);
+            this.ClientSize = new System.Drawing.Size(1850, 1050);
             this.Controls.Add(this.button_back_PrintConsume);
             this.Controls.Add(this.Button_Confirm_Printing);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "PrintRestant";
             this.Text = "PrintRestant";
+            this.Load += new System.EventHandler(this.PrintRestant_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -262,5 +283,7 @@ namespace Cetiev2._0
         private System.Windows.Forms.Button Button_Confirm_Printing;
         private System.Windows.Forms.Button button_back_PrintConsume;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

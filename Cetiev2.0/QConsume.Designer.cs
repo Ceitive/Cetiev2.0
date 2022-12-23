@@ -38,6 +38,7 @@ namespace Cetiev2._0
             this.Label_Recherche_par_référence = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +59,7 @@ namespace Cetiev2._0
             this.button_Imprimer_QConsume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Imprimer_QConsume.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Imprimer_QConsume.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Imprimer_QConsume.Location = new System.Drawing.Point(831, 930);
+            this.button_Imprimer_QConsume.Location = new System.Drawing.Point(854, 923);
             this.button_Imprimer_QConsume.Name = "button_Imprimer_QConsume";
             this.button_Imprimer_QConsume.Size = new System.Drawing.Size(275, 42);
             this.button_Imprimer_QConsume.TabIndex = 47;
@@ -84,7 +85,7 @@ namespace Cetiev2._0
             this.Button_Rechercher_REF_QConume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_Rechercher_REF_QConume.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Rechercher_REF_QConume.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Rechercher_REF_QConume.Location = new System.Drawing.Point(763, 873);
+            this.Button_Rechercher_REF_QConume.Location = new System.Drawing.Point(786, 866);
             this.Button_Rechercher_REF_QConume.Name = "Button_Rechercher_REF_QConume";
             this.Button_Rechercher_REF_QConume.Size = new System.Drawing.Size(408, 42);
             this.Button_Rechercher_REF_QConume.TabIndex = 45;
@@ -93,7 +94,7 @@ namespace Cetiev2._0
             // 
             // TextBox_Entrez_REF
             // 
-            this.TextBox_Entrez_REF.Location = new System.Drawing.Point(923, 827);
+            this.TextBox_Entrez_REF.Location = new System.Drawing.Point(946, 820);
             this.TextBox_Entrez_REF.Name = "TextBox_Entrez_REF";
             this.TextBox_Entrez_REF.Size = new System.Drawing.Size(248, 31);
             this.TextBox_Entrez_REF.TabIndex = 44;
@@ -102,7 +103,7 @@ namespace Cetiev2._0
             // 
             this.Label_Entrez_la_référence.AutoSize = true;
             this.Label_Entrez_la_référence.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(763, 824);
+            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(786, 817);
             this.Label_Entrez_la_référence.Name = "Label_Entrez_la_référence";
             this.Label_Entrez_la_référence.Size = new System.Drawing.Size(154, 32);
             this.Label_Entrez_la_référence.TabIndex = 43;
@@ -113,7 +114,7 @@ namespace Cetiev2._0
             this.Label_Recherche_par_référence.AutoSize = true;
             this.Label_Recherche_par_référence.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Label_Recherche_par_référence.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(786, 760);
+            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(809, 753);
             this.Label_Recherche_par_référence.Name = "Label_Recherche_par_référence";
             this.Label_Recherche_par_référence.Size = new System.Drawing.Size(362, 45);
             this.Label_Recherche_par_référence.TabIndex = 42;
@@ -141,11 +142,24 @@ namespace Cetiev2._0
             this.dateTimePicker1.Size = new System.Drawing.Size(217, 31);
             this.dateTimePicker1.TabIndex = 48;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(768, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(403, 40);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "La Quantité Consommée";
+            // 
             // QConsume
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2086, 1177);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -175,5 +189,6 @@ namespace Cetiev2._0
         private System.Windows.Forms.Label Label_Recherche_par_référence;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
     }
 }

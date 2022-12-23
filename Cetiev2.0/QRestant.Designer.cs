@@ -38,6 +38,7 @@ namespace Cetiev2._0
             this.button_back_QReastant = new System.Windows.Forms.Button();
             this.button_Imprimer_QRestant = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +57,7 @@ namespace Cetiev2._0
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1691, 12);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1688, 23);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 31);
             this.dateTimePicker1.TabIndex = 9;
@@ -66,7 +67,7 @@ namespace Cetiev2._0
             this.Button_Rechercher_REF_QRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_Rechercher_REF_QRestant.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Rechercher_REF_QRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Rechercher_REF_QRestant.Location = new System.Drawing.Point(842, 859);
+            this.Button_Rechercher_REF_QRestant.Location = new System.Drawing.Point(779, 859);
             this.Button_Rechercher_REF_QRestant.Name = "Button_Rechercher_REF_QRestant";
             this.Button_Rechercher_REF_QRestant.Size = new System.Drawing.Size(408, 42);
             this.Button_Rechercher_REF_QRestant.TabIndex = 16;
@@ -75,7 +76,7 @@ namespace Cetiev2._0
             // 
             // TextBox_Entrez_REF
             // 
-            this.TextBox_Entrez_REF.Location = new System.Drawing.Point(1002, 813);
+            this.TextBox_Entrez_REF.Location = new System.Drawing.Point(939, 813);
             this.TextBox_Entrez_REF.Name = "TextBox_Entrez_REF";
             this.TextBox_Entrez_REF.Size = new System.Drawing.Size(248, 31);
             this.TextBox_Entrez_REF.TabIndex = 15;
@@ -84,7 +85,7 @@ namespace Cetiev2._0
             // 
             this.Label_Entrez_la_référence.AutoSize = true;
             this.Label_Entrez_la_référence.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(842, 810);
+            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(779, 810);
             this.Label_Entrez_la_référence.Name = "Label_Entrez_la_référence";
             this.Label_Entrez_la_référence.Size = new System.Drawing.Size(154, 32);
             this.Label_Entrez_la_référence.TabIndex = 14;
@@ -95,7 +96,7 @@ namespace Cetiev2._0
             this.Label_Recherche_par_référence.AutoSize = true;
             this.Label_Recherche_par_référence.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Label_Recherche_par_référence.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(867, 755);
+            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(804, 755);
             this.Label_Recherche_par_référence.Name = "Label_Recherche_par_référence";
             this.Label_Recherche_par_référence.Size = new System.Drawing.Size(362, 45);
             this.Label_Recherche_par_référence.TabIndex = 13;
@@ -106,7 +107,7 @@ namespace Cetiev2._0
             this.button_back_QReastant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_back_QReastant.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_back_QReastant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_back_QReastant.Location = new System.Drawing.Point(12, 12);
+            this.button_back_QReastant.Location = new System.Drawing.Point(12, 14);
             this.button_back_QReastant.Name = "button_back_QReastant";
             this.button_back_QReastant.Size = new System.Drawing.Size(85, 42);
             this.button_back_QReastant.TabIndex = 40;
@@ -119,7 +120,7 @@ namespace Cetiev2._0
             this.button_Imprimer_QRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Imprimer_QRestant.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Imprimer_QRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Imprimer_QRestant.Location = new System.Drawing.Point(910, 922);
+            this.button_Imprimer_QRestant.Location = new System.Drawing.Point(847, 922);
             this.button_Imprimer_QRestant.Name = "button_Imprimer_QRestant";
             this.button_Imprimer_QRestant.Size = new System.Drawing.Size(275, 42);
             this.button_Imprimer_QRestant.TabIndex = 41;
@@ -141,11 +142,24 @@ namespace Cetiev2._0
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1891, 669);
             this.tableLayoutPanel1.TabIndex = 42;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(789, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(349, 40);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "La Quantité Restante";
+            // 
             // QRestant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1915, 1050);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button_Imprimer_QRestant);
             this.Controls.Add(this.button_back_QReastant);
@@ -175,5 +189,6 @@ namespace Cetiev2._0
         private System.Windows.Forms.Button button_back_QReastant;
         private System.Windows.Forms.Button button_Imprimer_QRestant;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label1;
     }
 }
