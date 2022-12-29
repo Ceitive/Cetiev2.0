@@ -267,5 +267,27 @@ namespace Cetiev2._0
                 xcelApp.Visible = true;
             }
         }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            SQLiteConnection con = new SQLiteConnection("Data Source=database.db");
+            SQLiteCommand cmmd = new SQLiteCommand(@"DELETE FROM ProjectDetails", con);
+            con.Open();
+            cmmd.ExecuteNonQuery();
+            con.Close();
+
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
+                SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO ProjectDetails (Reference, Desciption, Quantity, Rayonnage, Consummation, Rest, ProjectName) 
+                VALUES ('" + dataGridView1.Rows[i].Cells[0].Value + "','" + dataGridView1.Rows[i].Cells[2].Value + "','"
+                + dataGridView1.Rows[i].Cells[1].Value + "','" + dataGridView1.Rows[i].Cells[3].Value +
+                "','" + dataGridView1.Rows[i].Cells[4].Value + "','" + dataGridView1.Rows[i].Cells[5].Value + "','" +
+                dataGridView1.Rows[i].Cells[6].Value + "')", conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
     }
 }

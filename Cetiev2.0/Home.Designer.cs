@@ -57,6 +57,7 @@ namespace Cetiev2._0
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SearchBtn = new System.Windows.Forms.Button();
             this.Export = new System.Windows.Forms.Label();
+            this.saveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -339,11 +340,22 @@ namespace Cetiev2._0
             this.Export.Text = "Export";
             this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
+            // saveBtn
+            // 
+            this.saveBtn.Location = new System.Drawing.Point(1239, 388);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(75, 23);
+            this.saveBtn.TabIndex = 45;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1347, 630);
+            this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.Export);
             this.Controls.Add(this.SearchBtn);
             this.Controls.Add(this.comboBox2);
@@ -404,5 +416,6 @@ namespace Cetiev2._0
         private System.Windows.Forms.Button SearchBtn;
         public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label Export;
+        private System.Windows.Forms.Button saveBtn;
     }
 }
