@@ -19,6 +19,7 @@ namespace Cetiev2._0
 {
     public partial class Clean : Form
     {
+        
         public Clean()
         {
             InitializeComponent();
