@@ -139,6 +139,7 @@ namespace Cetiev2._0
             this.Name = "QRestant";
             this.Text = "QRestant";
             this.Load += new System.EventHandler(this.QRestant_Load);
+            this.Resize += new System.EventHandler(this.QRestant_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

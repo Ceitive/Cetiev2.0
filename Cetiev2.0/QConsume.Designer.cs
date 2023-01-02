@@ -43,11 +43,11 @@ namespace Cetiev2._0
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1895, 617);
+            this.dataGridView1.Size = new System.Drawing.Size(1965, 608);
             this.dataGridView1.TabIndex = 7;
             // 
             // button_Imprimer_QConsume
@@ -118,7 +118,7 @@ namespace Cetiev2._0
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 14);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(315, 31);
             this.dateTimePicker1.TabIndex = 48;
@@ -139,6 +139,7 @@ namespace Cetiev2._0
             this.Name = "QConsume";
             this.Text = "QConsumé";
             this.Load += new System.EventHandler(this.QConsumé_Load);
+            this.Resize += new System.EventHandler(this.QConsume_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

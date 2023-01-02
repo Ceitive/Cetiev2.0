@@ -17,6 +17,7 @@ using Microsoft.PowerBI.Api.Models;
 
 namespace Cetiev2._0
 {
+
     public partial class Clean : Form
     {
         
@@ -64,8 +65,10 @@ namespace Cetiev2._0
 
         private void Clean_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -244,6 +247,11 @@ namespace Cetiev2._0
             }
             MessageBox.Show("les données ont été insérées dans la base de données avec succès");
             dataGridView2.Rows.Clear();
+        }
+
+        private void Clean_Resize(object sender, EventArgs e)
+        {
+            
         }
     }
     public static class DataGridHelper
