@@ -206,15 +206,15 @@ namespace Cetiev2._0
                     while (read.Read())
                     {
                         dataGridView1.Rows.Add(new object[] {
-            //read.GetValue(0),  // U can use column index
-            read.GetValue(read.GetOrdinal("Reference")),  // Or column name like this
-            read.GetValue(read.GetOrdinal("Desciption")),
-            read.GetValue(read.GetOrdinal("Quantity")),
-            read.GetValue(read.GetOrdinal("Rayonnage")),
-            read.GetValue(read.GetOrdinal("Consummation")),
-            read.GetValue(read.GetOrdinal("Rest")),
-            read.GetValue(read.GetOrdinal("ProjectName"))
-            });
+                        //read.GetValue(0),  // U can use column index
+                        read.GetValue(read.GetOrdinal("Reference")),  // Or column name like this
+                        read.GetValue(read.GetOrdinal("Desciption")),
+                        read.GetValue(read.GetOrdinal("Quantity")),
+                        read.GetValue(read.GetOrdinal("Rayonnage")),
+                        read.GetValue(read.GetOrdinal("Consummation")),
+                        read.GetValue(read.GetOrdinal("Rest")),
+                        read.GetValue(read.GetOrdinal("ProjectName"))
+                        });
                     }
                 }
             }
