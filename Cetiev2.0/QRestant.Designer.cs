@@ -37,6 +37,7 @@ namespace Cetiev2._0
             this.Label_Recherche_par_référence = new System.Windows.Forms.Label();
             this.button_back_QReastant = new System.Windows.Forms.Button();
             this.button_Imprimer_QRestant = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,11 +124,22 @@ namespace Cetiev2._0
             this.button_Imprimer_QRestant.UseVisualStyleBackColor = false;
             this.button_Imprimer_QRestant.Click += new System.EventHandler(this.button_Imprimer_QRestant_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(948, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(312, 32);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "Tableau Quantité Restante";
+            // 
             // QRestant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1915, 1050);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button_Imprimer_QRestant);
             this.Controls.Add(this.button_back_QReastant);
             this.Controls.Add(this.Button_Rechercher_REF_QRestant);
@@ -156,5 +168,6 @@ namespace Cetiev2._0
         private System.Windows.Forms.Label Label_Recherche_par_référence;
         private System.Windows.Forms.Button button_back_QReastant;
         private System.Windows.Forms.Button button_Imprimer_QRestant;
+        private System.Windows.Forms.Label label2;
     }
 }

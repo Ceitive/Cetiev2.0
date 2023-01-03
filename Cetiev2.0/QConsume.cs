@@ -10,6 +10,7 @@ namespace Cetiev2._0
 {
     public partial class QConsume : Form
     {
+        private Rectangle label2OriginalRect;
         private Rectangle dateTimePicker1OriginalRect;
         private Rectangle dataGridView1OriginalRect;
         private Rectangle Label_Recherche_par_référenceOriginalRect;
@@ -28,6 +29,7 @@ namespace Cetiev2._0
         private void QConsumé_Load(object sender, EventArgs e)
         {
             formOriginalSize = this.Size;
+            label2OriginalRect = new Rectangle(label2.Location.X, label2.Location.Y, label2.Width, label2.Height);
             dateTimePicker1OriginalRect = new Rectangle(dateTimePicker1.Location.X, dateTimePicker1.Location.Y, dateTimePicker1.Width, dateTimePicker1.Height);
             dataGridView1OriginalRect = new Rectangle(dataGridView1.Location.X, dataGridView1.Location.Y, dataGridView1.Width, dataGridView1.Height);
             Label_Recherche_par_référenceOriginalRect = new Rectangle(Label_Recherche_par_référence.Location.X, Label_Recherche_par_référence.Location.Y, Label_Recherche_par_référence.Width, Label_Recherche_par_référence.Height);
@@ -40,6 +42,7 @@ namespace Cetiev2._0
 
         private void resizeChildrenControls()
         {
+            resizeControls(label2OriginalRect, label2);
             resizeControls(dateTimePicker1OriginalRect, dateTimePicker1);
             resizeControls(dataGridView1OriginalRect, dataGridView1);
             resizeControls(Label_Recherche_par_référenceOriginalRect, Label_Recherche_par_référence);

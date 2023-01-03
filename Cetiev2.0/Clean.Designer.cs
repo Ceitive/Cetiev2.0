@@ -178,7 +178,7 @@ namespace Cetiev2._0
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(921, 598);
+            this.dataGridView2.Size = new System.Drawing.Size(907, 598);
             this.dataGridView2.TabIndex = 37;
             // 
             // Reference
@@ -241,7 +241,7 @@ namespace Cetiev2._0
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1941, 1050);
+            this.ClientSize = new System.Drawing.Size(1944, 1050);
             this.Controls.Add(this.button_back_clean);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);

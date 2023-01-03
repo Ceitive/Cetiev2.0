@@ -58,6 +58,7 @@ namespace Cetiev2._0
             this.SearchBtn = new System.Windows.Forms.Button();
             this.Export = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,13 +73,14 @@ namespace Cetiev2._0
             this.Consummation,
             this.Rest,
             this.ProjectName});
-            this.dataGridView1.Location = new System.Drawing.Point(11, 48);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1894, 463);
+            this.dataGridView1.Size = new System.Drawing.Size(1887, 474);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.Resize += new System.EventHandler(this.dataGridView1_Resize);
             // 
             // Reference
             // 
@@ -137,7 +139,7 @@ namespace Cetiev2._0
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(11, 12);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 22);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(315, 31);
             this.dateTimePicker1.TabIndex = 8;
@@ -147,7 +149,7 @@ namespace Cetiev2._0
             this.label_recherche_par_prjt.AutoSize = true;
             this.label_recherche_par_prjt.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label_recherche_par_prjt.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_recherche_par_prjt.Location = new System.Drawing.Point(111, 627);
+            this.label_recherche_par_prjt.Location = new System.Drawing.Point(215, 657);
             this.label_recherche_par_prjt.Name = "label_recherche_par_prjt";
             this.label_recherche_par_prjt.Size = new System.Drawing.Size(313, 45);
             this.label_recherche_par_prjt.TabIndex = 14;
@@ -158,7 +160,7 @@ namespace Cetiev2._0
             this.label_information_consommateurs.AutoSize = true;
             this.label_information_consommateurs.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label_information_consommateurs.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_information_consommateurs.Location = new System.Drawing.Point(1119, 517);
+            this.label_information_consommateurs.Location = new System.Drawing.Point(1298, 551);
             this.label_information_consommateurs.Name = "label_information_consommateurs";
             this.label_information_consommateurs.Size = new System.Drawing.Size(441, 45);
             this.label_information_consommateurs.TabIndex = 27;
@@ -168,7 +170,7 @@ namespace Cetiev2._0
             // 
             this.label_entrez_REF.AutoSize = true;
             this.label_entrez_REF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_REF.Location = new System.Drawing.Point(1097, 718);
+            this.label_entrez_REF.Location = new System.Drawing.Point(1276, 752);
             this.label_entrez_REF.Name = "label_entrez_REF";
             this.label_entrez_REF.Size = new System.Drawing.Size(137, 32);
             this.label_entrez_REF.TabIndex = 28;
@@ -178,7 +180,7 @@ namespace Cetiev2._0
             // 
             this.label_Nombre_des_pcs.AutoSize = true;
             this.label_Nombre_des_pcs.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Nombre_des_pcs.Location = new System.Drawing.Point(1097, 672);
+            this.label_Nombre_des_pcs.Location = new System.Drawing.Point(1276, 706);
             this.label_Nombre_des_pcs.Name = "label_Nombre_des_pcs";
             this.label_Nombre_des_pcs.Size = new System.Drawing.Size(200, 32);
             this.label_Nombre_des_pcs.TabIndex = 29;
@@ -188,7 +190,7 @@ namespace Cetiev2._0
             // 
             this.label_entrez_IE_IU.AutoSize = true;
             this.label_entrez_IE_IU.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_IE_IU.Location = new System.Drawing.Point(1097, 623);
+            this.label_entrez_IE_IU.Location = new System.Drawing.Point(1276, 657);
             this.label_entrez_IE_IU.Name = "label_entrez_IE_IU";
             this.label_entrez_IE_IU.Size = new System.Drawing.Size(162, 32);
             this.label_entrez_IE_IU.TabIndex = 30;
@@ -198,7 +200,7 @@ namespace Cetiev2._0
             // 
             this.label_entrez_nom_complet.AutoSize = true;
             this.label_entrez_nom_complet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_nom_complet.Location = new System.Drawing.Point(1097, 577);
+            this.label_entrez_nom_complet.Location = new System.Drawing.Point(1276, 611);
             this.label_entrez_nom_complet.Name = "label_entrez_nom_complet";
             this.label_entrez_nom_complet.Size = new System.Drawing.Size(242, 32);
             this.label_entrez_nom_complet.TabIndex = 31;
@@ -209,7 +211,7 @@ namespace Cetiev2._0
             this.button_Valider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Valider.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Valider.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Valider.Location = new System.Drawing.Point(1097, 760);
+            this.button_Valider.Location = new System.Drawing.Point(1276, 794);
             this.button_Valider.Name = "button_Valider";
             this.button_Valider.Size = new System.Drawing.Size(477, 42);
             this.button_Valider.TabIndex = 32;
@@ -221,7 +223,7 @@ namespace Cetiev2._0
             this.button_Quantité_restante_de_piéces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Quantité_restante_de_piéces.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Quantité_restante_de_piéces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Quantité_restante_de_piéces.Location = new System.Drawing.Point(1097, 808);
+            this.button_Quantité_restante_de_piéces.Location = new System.Drawing.Point(1276, 842);
             this.button_Quantité_restante_de_piéces.Name = "button_Quantité_restante_de_piéces";
             this.button_Quantité_restante_de_piéces.Size = new System.Drawing.Size(241, 142);
             this.button_Quantité_restante_de_piéces.TabIndex = 33;
@@ -234,7 +236,7 @@ namespace Cetiev2._0
             this.button_Quantité_de_pièces_consommées.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_Quantité_de_pièces_consommées.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_Quantité_de_pièces_consommées.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Quantité_de_pièces_consommées.Location = new System.Drawing.Point(1350, 808);
+            this.button_Quantité_de_pièces_consommées.Location = new System.Drawing.Point(1529, 842);
             this.button_Quantité_de_pièces_consommées.Name = "button_Quantité_de_pièces_consommées";
             this.button_Quantité_de_pièces_consommées.Size = new System.Drawing.Size(224, 142);
             this.button_Quantité_de_pièces_consommées.TabIndex = 34;
@@ -244,28 +246,28 @@ namespace Cetiev2._0
             // 
             // textBox_Entrez_REF_pour_cons
             // 
-            this.textBox_Entrez_REF_pour_cons.Location = new System.Drawing.Point(1350, 723);
+            this.textBox_Entrez_REF_pour_cons.Location = new System.Drawing.Point(1529, 757);
             this.textBox_Entrez_REF_pour_cons.Name = "textBox_Entrez_REF_pour_cons";
             this.textBox_Entrez_REF_pour_cons.Size = new System.Drawing.Size(224, 31);
             this.textBox_Entrez_REF_pour_cons.TabIndex = 35;
             // 
             // textBox_Nombre_des_pcs
             // 
-            this.textBox_Nombre_des_pcs.Location = new System.Drawing.Point(1350, 675);
+            this.textBox_Nombre_des_pcs.Location = new System.Drawing.Point(1529, 709);
             this.textBox_Nombre_des_pcs.Name = "textBox_Nombre_des_pcs";
             this.textBox_Nombre_des_pcs.Size = new System.Drawing.Size(224, 31);
             this.textBox_Nombre_des_pcs.TabIndex = 36;
             // 
             // textBox_entrez_IE_IU
             // 
-            this.textBox_entrez_IE_IU.Location = new System.Drawing.Point(1350, 627);
+            this.textBox_entrez_IE_IU.Location = new System.Drawing.Point(1529, 661);
             this.textBox_entrez_IE_IU.Name = "textBox_entrez_IE_IU";
             this.textBox_entrez_IE_IU.Size = new System.Drawing.Size(224, 31);
             this.textBox_entrez_IE_IU.TabIndex = 37;
             // 
             // textBox_Entrez_nom_complet
             // 
-            this.textBox_Entrez_nom_complet.Location = new System.Drawing.Point(1350, 578);
+            this.textBox_Entrez_nom_complet.Location = new System.Drawing.Point(1529, 612);
             this.textBox_Entrez_nom_complet.Name = "textBox_Entrez_nom_complet";
             this.textBox_Entrez_nom_complet.Size = new System.Drawing.Size(224, 31);
             this.textBox_Entrez_nom_complet.TabIndex = 38;
@@ -275,7 +277,7 @@ namespace Cetiev2._0
             this.button_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button_back.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_back.Location = new System.Drawing.Point(11, 943);
+            this.button_back.Location = new System.Drawing.Point(12, 942);
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(184, 42);
             this.button_back.TabIndex = 39;
@@ -285,11 +287,13 @@ namespace Cetiev2._0
             // 
             // ActualiserBtn
             // 
-            this.ActualiserBtn.BackColor = System.Drawing.Color.Lime;
-            this.ActualiserBtn.Location = new System.Drawing.Point(1748, 551);
+            this.ActualiserBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ActualiserBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.ActualiserBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ActualiserBtn.Location = new System.Drawing.Point(1768, 17);
             this.ActualiserBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ActualiserBtn.Name = "ActualiserBtn";
-            this.ActualiserBtn.Size = new System.Drawing.Size(131, 58);
+            this.ActualiserBtn.Size = new System.Drawing.Size(131, 42);
             this.ActualiserBtn.TabIndex = 40;
             this.ActualiserBtn.Text = "Synchroniser";
             this.ActualiserBtn.UseVisualStyleBackColor = false;
@@ -301,7 +305,7 @@ namespace Cetiev2._0
             this.comboBox1.Items.AddRange(new object[] {
             "Ref",
             "Project"});
-            this.comboBox1.Location = new System.Drawing.Point(171, 706);
+            this.comboBox1.Location = new System.Drawing.Point(272, 736);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(171, 33);
@@ -314,7 +318,7 @@ namespace Cetiev2._0
             this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(529, 706);
+            this.comboBox2.Location = new System.Drawing.Point(653, 736);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(171, 33);
@@ -325,10 +329,10 @@ namespace Cetiev2._0
             this.SearchBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SearchBtn.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SearchBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.SearchBtn.Location = new System.Drawing.Point(171, 785);
+            this.SearchBtn.Location = new System.Drawing.Point(272, 812);
             this.SearchBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(529, 51);
+            this.SearchBtn.Size = new System.Drawing.Size(552, 51);
             this.SearchBtn.TabIndex = 43;
             this.SearchBtn.Text = "Rechercher";
             this.SearchBtn.UseVisualStyleBackColor = false;
@@ -337,7 +341,7 @@ namespace Cetiev2._0
             // Export
             // 
             this.Export.AutoSize = true;
-            this.Export.Location = new System.Drawing.Point(803, 537);
+            this.Export.Location = new System.Drawing.Point(803, 567);
             this.Export.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Export.Name = "Export";
             this.Export.Size = new System.Drawing.Size(63, 25);
@@ -350,17 +354,28 @@ namespace Cetiev2._0
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(480, 627);
+            this.label1.Location = new System.Drawing.Point(613, 657);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(282, 45);
             this.label1.TabIndex = 45;
             this.label1.Text = "Recherche par RÉF";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(803, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(225, 32);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Tableau Principale";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.ClientSize = new System.Drawing.Size(1997, 1050);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Export);
             this.Controls.Add(this.SearchBtn);
@@ -422,5 +437,6 @@ namespace Cetiev2._0
         public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label Export;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

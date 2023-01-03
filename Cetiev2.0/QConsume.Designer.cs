@@ -37,6 +37,7 @@ namespace Cetiev2._0
             this.Label_Entrez_la_référence = new System.Windows.Forms.Label();
             this.Label_Recherche_par_référence = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,11 +124,22 @@ namespace Cetiev2._0
             this.dateTimePicker1.Size = new System.Drawing.Size(315, 31);
             this.dateTimePicker1.TabIndex = 48;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(685, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(318, 32);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Tableau Quantité Consumé";
+            // 
             // QConsume
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1989, 1019);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button_Imprimer_QConsume);
             this.Controls.Add(this.button_back);
@@ -156,5 +168,6 @@ namespace Cetiev2._0
         private System.Windows.Forms.Label Label_Entrez_la_référence;
         private System.Windows.Forms.Label Label_Recherche_par_référence;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -17,10 +17,11 @@ using Microsoft.PowerBI.Api.Models;
 
 namespace Cetiev2._0
 {
-
     public partial class Clean : Form
     {
-        
+      
+
+        private Size formOriginalSize;
         public Clean()
         {
             InitializeComponent();
@@ -67,8 +68,6 @@ namespace Cetiev2._0
         {
             
         }
-
-
 
         private void button1_Click(object sender, EventArgs e)
         {
