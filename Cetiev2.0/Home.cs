@@ -125,6 +125,8 @@ namespace Cetiev2._0
             ActualiserBtnOriginalRect = new Rectangle(ActualiserBtn.Location.X, ActualiserBtn.Location.Y, ActualiserBtn.Width, ActualiserBtn.Height);
             label2OriginalRect = new Rectangle(label2.Location.X, label2.Location.Y, label2.Width, label2.Height);
             ExportOriginalRect = new Rectangle(Export.Location.X, Export.Location.Y, Export.Width, Export.Height);
+            button_backOriginalRect = new Rectangle(button_back.Location.X, button_back.Location.Y, button_back.Width, button_back.Height);
+
         }
 
         private void resizeChildrenControls()
@@ -151,6 +153,7 @@ namespace Cetiev2._0
             resizeControls(button_Quantité_de_pièces_consomméesOriginalRect, button_Quantité_de_pièces_consommées);
             resizeControls(ActualiserBtnOriginalRect, ActualiserBtn);
             resizeControls(label2OriginalRect, label2);
+            resizeControls(ExportOriginalRect, Export);
         }
 
         private void resizeControls(Rectangle OriginalControlRect, System.Windows.Forms.Control control)

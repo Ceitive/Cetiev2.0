@@ -341,7 +341,7 @@ namespace Cetiev2._0
             // Export
             // 
             this.Export.AutoSize = true;
-            this.Export.Location = new System.Drawing.Point(803, 567);
+            this.Export.Location = new System.Drawing.Point(1025, 567);
             this.Export.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Export.Name = "Export";
             this.Export.Size = new System.Drawing.Size(63, 25);
