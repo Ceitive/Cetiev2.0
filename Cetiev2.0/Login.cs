@@ -31,11 +31,6 @@ namespace Cetiev2._0
             InitializeComponent();
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             formOriginalSize = this.Size;
@@ -88,11 +83,6 @@ namespace Cetiev2._0
             txtMotdepasse.UseSystemPasswordChar = true;
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void SeConnecter_Click(object sender, EventArgs e)
         {
             string username = txtUtilisateur.Text;
@@ -124,21 +114,6 @@ namespace Cetiev2._0
                     MessageBox.Show("Wrong name or password !");
                 }
             } 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-        }
- 
-        private void button3_Click(object sender, EventArgs e)
-        {
-              
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

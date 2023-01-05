@@ -148,7 +148,7 @@ namespace Cetiev2._0
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(963, 598);
             this.dataGridView1.TabIndex = 35;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            //this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -257,8 +257,8 @@ namespace Cetiev2._0
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Clean";
             this.Text = "Clean";
-            this.Load += new System.EventHandler(this.Clean_Load);
-            this.Resize += new System.EventHandler(this.Clean_Resize);
+            //this.Load += new System.EventHandler(this.Clean_Load);
+            //this.Resize += new System.EventHandler(this.Clean_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);

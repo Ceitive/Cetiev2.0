@@ -120,7 +120,7 @@ namespace Cetiev2._0
             this.button_Imprimer_QRestant.Name = "button_Imprimer_QRestant";
             this.button_Imprimer_QRestant.Size = new System.Drawing.Size(275, 42);
             this.button_Imprimer_QRestant.TabIndex = 41;
-            this.button_Imprimer_QRestant.Text = "Imprimer";
+            this.button_Imprimer_QRestant.Text = "Imprimer vers excel";
             this.button_Imprimer_QRestant.UseVisualStyleBackColor = false;
             this.button_Imprimer_QRestant.Click += new System.EventHandler(this.button_Imprimer_QRestant_Click);
             // 

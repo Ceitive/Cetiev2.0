@@ -19,9 +19,6 @@ namespace Cetiev2._0
 {
     public partial class Clean : Form
     {
-      
-
-        private Size formOriginalSize;
         public Clean()
         {
             InitializeComponent();
@@ -62,11 +59,6 @@ namespace Cetiev2._0
                     MessageBox.Show("Please choose .xls or .xlsx file only.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error); //custom messageBox to show error
                 }
             }
-        }
-
-        private void Clean_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -175,8 +167,7 @@ namespace Cetiev2._0
                 else
                 {
                     break;
-                }
-                
+                }    
             }
 
             for (int i = 0; i < descList.Count; i++)
@@ -210,12 +201,6 @@ namespace Cetiev2._0
                     }
                 }
             }
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
         }
 
         private void button_back_clean_Click(object sender, EventArgs e)
@@ -225,13 +210,8 @@ namespace Cetiev2._0
             back.Show(); 
         }
 
-        private void RemoveDupBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
         private void Button_Save_Click(object sender, EventArgs e)
         {
-
             for (int i = 0; i < dataGridView2.Rows.Count; i++)
             {
                 SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
@@ -246,11 +226,6 @@ namespace Cetiev2._0
             }
             MessageBox.Show("les données ont été insérées dans la base de données avec succès");
             dataGridView2.Rows.Clear();
-        }
-
-        private void Clean_Resize(object sender, EventArgs e)
-        {
-            
         }
     }
     public static class DataGridHelper

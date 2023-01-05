@@ -47,7 +47,7 @@ namespace Cetiev2._0
             // 
             // backgroundWorker1
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            //this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // button1_effacer
             // 
@@ -141,7 +141,7 @@ namespace Cetiev2._0
             this.label3.Size = new System.Drawing.Size(167, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Mot de passe :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            //this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 

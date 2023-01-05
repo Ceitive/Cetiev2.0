@@ -68,7 +68,6 @@ namespace Cetiev2._0
             control.Size = new Size(newWidth, newHeight);
         }
 
-
         private void button_back_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -76,16 +75,32 @@ namespace Cetiev2._0
             back.Show();
         }
 
-        private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            PrintConsume h = new PrintConsume();
-            h.Show();
-        }
-
         private void QConsume_Resize(object sender, EventArgs e)
         {
             resizeChildrenControls();
         }
-    }
+
+        private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
+        {
+            //if (dataGridView1.Rows.Count > 0)
+            //{
+            //    Microsoft.Office.Interop.Excel.Application xcelApp = new Microsoft.Office.Interop.Excel.Application();
+            //    xcelApp.Application.Workbooks.Add(Type.Missing);
+            //    for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
+            //    {
+            //        xcelApp.Cells[1, i] = dataGridView1.Columns[1 - i].HeaderText;
+            //    }
+
+            //    for (int i = 0; i < dataGridView1.Rows.Count + 1; i++)
+            //    {
+            //        for (int j = 0; j < dataGridView1.Columns.Count + 1; i++)
+            //        {
+            //            xcelApp.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+            //        }
+            //    }
+            //    xcelApp.Columns.AutoFit();
+            //    xcelApp.Visible = true;
+            //}
+        }
+    }    
 }

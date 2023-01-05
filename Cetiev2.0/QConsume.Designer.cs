@@ -60,7 +60,7 @@ namespace Cetiev2._0
             this.button_Imprimer_QConsume.Name = "button_Imprimer_QConsume";
             this.button_Imprimer_QConsume.Size = new System.Drawing.Size(275, 42);
             this.button_Imprimer_QConsume.TabIndex = 47;
-            this.button_Imprimer_QConsume.Text = "Imprimer";
+            this.button_Imprimer_QConsume.Text = "Imprimer vers excel";
             this.button_Imprimer_QConsume.UseVisualStyleBackColor = false;
             this.button_Imprimer_QConsume.Click += new System.EventHandler(this.button_Imprimer_QConsume_Click);
             // 
