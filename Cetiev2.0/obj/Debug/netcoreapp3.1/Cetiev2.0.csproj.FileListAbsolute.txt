@@ -386,8 +386,6 @@ E:\New clone Cetiev\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.PrintRestant.re
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.PowerBI.Api.dll
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.PrintConsume.resources
-C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.PrintRestant.resources
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.QConsume.resources
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\obj\Debug\netcoreapp3.1\Cetiev2._0.QRestant.resources
 C:\Users\HP\Source\Repos\Cetiev2.0\Cetiev2.0\bin\Debug\netcoreapp3.1\Microsoft.Office.interop.access.dao.dll

@@ -94,8 +94,8 @@ namespace Cetiev2._0
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Browse";
             this.Text = "Browse";
-            this.Load += new System.EventHandler(this.Browse_Load);
-            this.Resize += new System.EventHandler(this.Browse_Resize);
+            //this.Load += new System.EventHandler(this.Browse_Load);
+            //this.Resize += new System.EventHandler(this.Browse_Resize);
             this.ResumeLayout(false);
 
         }
