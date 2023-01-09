@@ -212,20 +212,28 @@ namespace Cetiev2._0
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < dataGridView2.Rows.Count; i++)
+            if (textBoxProjectName.Text == "")
             {
-                SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
-                SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO ProjectDetails (Reference, Desciption, Quantity, Rayonnage, Consummation, Rest, ProjectName) 
-                VALUES ('" + dataGridView2.Rows[i].Cells[0].Value + "','" + dataGridView2.Rows[i].Cells[2].Value + "','"
-                + dataGridView2.Rows[i].Cells[1].Value + "','" + dataGridView2.Rows[i].Cells[3].Value +
-                "','" + dataGridView2.Rows[i].Cells[4].Value + "','" + dataGridView2.Rows[i].Cells[5].Value +"','"+
-                textBoxProjectName.Text + "')", conn);
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                MessageBox.Show("le nom de project peut pas etre vide");
             }
-            MessageBox.Show("les données ont été insérées dans la base de données avec succès");
-            dataGridView2.Rows.Clear();
+            else
+            {
+                for (int i = 0; i < dataGridView2.Rows.Count; i++)
+                {
+                    SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
+                    SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO ProjectDetails (Reference, Desciption, Quantity, Rayonnage, Consummation, Rest, ProjectName) 
+                VALUES ('" + dataGridView2.Rows[i].Cells[0].Value + "','" + dataGridView2.Rows[i].Cells[2].Value + "','"
+                    + dataGridView2.Rows[i].Cells[1].Value + "','" + dataGridView2.Rows[i].Cells[3].Value +
+                    "','" + dataGridView2.Rows[i].Cells[4].Value + "','" + dataGridView2.Rows[i].Cells[5].Value + "','" +
+                    textBoxProjectName.Text + "')", conn);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                MessageBox.Show("les données ont été insérées dans la base de données avec succès");
+                dataGridView2.Rows.Clear();
+            }
+            
         }
     }
     public static class DataGridHelper

@@ -182,6 +182,24 @@ namespace Cetiev2._0
         {
             this.Hide();
             QRestant h = new QRestant();
+            //h.dataGridView1.Rows.Clear();
+            SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
+            conn.Open();
+            SQLiteCommand comm = new SQLiteCommand("Select * From Consume join ProjectDetails on Consume.Reference = ProjectDetails.Reference", conn);
+            using (SQLiteDataReader read = comm.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    h.dataGridView1.Rows.Add(new object[]
+                    {
+                    //read.GetValue(0),  // U can use column index
+                    read.GetValue(read.GetOrdinal("Reference")),  // Or column name like this
+                    read.GetValue(read.GetOrdinal("Desciption")),
+                    read.GetValue(read.GetOrdinal("Rest")),
+                    read.GetValue(read.GetOrdinal("Rayonnage")),
+                    });
+                }
+            }
             h.Show();
         }
 
@@ -189,7 +207,7 @@ namespace Cetiev2._0
         {
             this.Hide();
             QConsume h = new QConsume();
-            h.dataGridView1.Rows.Clear();
+            //h.dataGridView1.Rows.Clear();
             SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
             conn.Open();
             SQLiteCommand comm = new SQLiteCommand("Select * From Consume join ProjectDetails on Consume.Reference = ProjectDetails.Reference", conn);
@@ -281,6 +299,11 @@ namespace Cetiev2._0
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
+            if (comboBox1.Text == "" || comboBox1.Text == "")
+            {
+                MessageBox.Show("svp choisissez une categorie soit reference ou project !");
+                return;
+            }
             if (comboBox1.SelectedItem.ToString() == "Ref")
             {
                 SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
