@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SQLite;
+using Microsoft.Office.Interop.Excel;
 
 namespace Cetiev2._0
 {
@@ -85,31 +86,27 @@ namespace Cetiev2._0
 
         private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count > 0)
-            {
-                Microsoft.Office.Interop.Excel.Application xcelApp = new Microsoft.Office.Interop.Excel.Application();
-                xcelApp.Application.Workbooks.Add(Type.Missing);
-                for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
-                {
-                    xcelApp.Cells[1, i] = dataGridView1.Columns[1 - i].HeaderText;
-                }
+            //var excelApp = new Microsoft.Office.Interop.Excel.Application();
 
-                for (int i = 0; i < dataGridView1.Rows.Count + 1; i++)
-                {
-                    for (int j = 0; j < dataGridView1.Columns.Count + 1; i++)
-                    {
-                        xcelApp.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
-                    }
-                }
-                xcelApp.Columns.AutoFit();
-                xcelApp.Visible = true;
-            }
+            //var workbook = excelApp.Workbooks.Add();
+            //var worksheet = workbook.Worksheets.Add();
+
+            //for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            //{
+            //    for (int j = 0; j < dataGridView1.Columns.Count; j++)
+            //    {
+            //        excelApp.Cells[i + 1, j + 1] = dataGridView1[j, i].Value;
+            //    }
+            //}
+            //workbook.SaveAs(@"C:\Users\HP\Downloads\Qconsume.xlsx");
+
+            //excelApp.Quit();
         }
 
         private void QConsume_Load(object sender, EventArgs e)
         {
             SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
-            DataTable table = new DataTable();
+            System.Data.DataTable table = new System.Data.DataTable();
             conn.Open();
             comboBox1.DisplayMember = "Reference";
             SQLiteDataAdapter sda = new SQLiteDataAdapter("Select distinct Reference From Consume", conn);
