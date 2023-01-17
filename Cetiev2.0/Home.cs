@@ -404,25 +404,24 @@ namespace Cetiev2._0
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            SQLiteConnection con = new SQLiteConnection("Data Source=database.db");
-            SQLiteCommand cmmd = new SQLiteCommand(@"DELETE FROM ProjectDetails", con);
-            con.Open();
-            cmmd.ExecuteNonQuery();
-            con.Close();
+            int selectedrowindex = dataGridView1.SelectedCells[0].RowIndex;
+            DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
 
-            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-            {
-                SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
-                SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO ProjectDetails (Reference, Desciption, Quantity, Rayonnage, Consummation, Rest, ProjectName) 
-                VALUES ('" + dataGridView1.Rows[i].Cells[0].Value + "','" + dataGridView1.Rows[i].Cells[1].Value + "','"
-                + dataGridView1.Rows[i].Cells[2].Value + "','" + dataGridView1.Rows[i].Cells[3].Value +
-                "','" + dataGridView1.Rows[i].Cells[4].Value + "','" + dataGridView1.Rows[i].Cells[5].Value + "','" +
-                dataGridView1.Rows[i].Cells[6].Value + "')", conn);
-                
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
+
+            SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
+            SQLiteCommand updateCmd = new SQLiteCommand(@"Update ProjectDetails set Desciption =:Desciption,Quantity=:Quantity,Rayonnage=:Rayonnage,Consummation=:Consummation,Rest=:Rest,ProjectName=:ProjectName WHERE Reference=:Reference", conn);
+            updateCmd.Parameters.Add("Desciption", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[1].Value;
+            updateCmd.Parameters.Add("Quantity", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[2].Value;
+            updateCmd.Parameters.Add("Rayonnage", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[3].Value;
+            updateCmd.Parameters.Add("Consummation", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[4].Value;
+            updateCmd.Parameters.Add("Rest", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[5].Value;
+            updateCmd.Parameters.Add("ProjectName", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[6].Value;
+
+            updateCmd.Parameters.Add("Reference", DbType.String).Value = Convert.ToString(selectedRow.Cells["Reference"].Value);
+
+            conn.Open();
+            updateCmd.ExecuteNonQuery();
+            conn.Close();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -495,12 +494,34 @@ namespace Cetiev2._0
             }
             return results;
         }
+
+        public List<string> getConsume(string reference)
+        {
+            string connectionString = "Data Source=database.db";
+            List<string> results = new List<string>();
+            SQLiteConnection connection = new SQLiteConnection(connectionString);
+            connection.Open();
+            string query = "Select * From ProjectDetails WHERE Reference=@Reference";
+            SQLiteCommand command = new SQLiteCommand(query, connection);
+            command.Parameters.AddWithValue("@Reference", reference);
+            SQLiteDataReader reader = command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                MessageBox.Show("there is no such reference !");
+            }
+            // Insert the results into a list
+            while (reader.Read())
+            {
+                results.Add(reader["Consummation"].ToString());
+            }
+            return results;
+        }
         private void button_Valider_Click(object sender, EventArgs e)
         {
             Home h = new Home();
             SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
             List<string> results = h.getRefInfo(comboBox3.Text);
-
+            List<string> consumed = h.getConsume(comboBox3.Text);
             SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO Consume (Name, IE, QtyWanted, Reference) 
                 VALUES ('" + textBox_Entrez_nom_complet.Text + "',' " + textBox_entrez_IE_IU.Text + "','"
             + textBox_Nombre_des_pcs.Text + "','" + comboBox3.Text + "')", conn);
@@ -509,8 +530,11 @@ namespace Cetiev2._0
             comm.Parameters.AddWithValue("@Reference", comboBox3.Text);
 
             SQLiteCommand updateCmd = new SQLiteCommand("Update ProjectDetails set Rest =:rest WHERE Reference=:Reference", conn);
+            SQLiteCommand updateCmmd = new SQLiteCommand("Update ProjectDetails set Consummation =:Consummation WHERE Reference=:Reference", conn);
             updateCmd.Parameters.Add("rest",DbType.String).Value = int.Parse(results[0]) - int.Parse(textBox_Nombre_des_pcs.Text);
-            updateCmd.Parameters.Add("Reference", DbType.String).Value = comboBox3.Text;
+            updateCmmd.Parameters.Add("Consummation", DbType.Int64).Value = int.Parse(consumed[0]) + int.Parse(textBox_Nombre_des_pcs.Text);
+            updateCmmd.Parameters.Add("Reference", DbType.String).Value = comboBox3.Text;
+            //updateCmd.Parameters.Add("Reference", DbType.String).Value = comboBox3.Text;
 
             // insert the result of query into a tempo list
 
@@ -534,6 +558,7 @@ namespace Cetiev2._0
                         conn.Open();
                         cmd.ExecuteNonQuery();
                         updateCmd.ExecuteNonQuery();
+                        updateCmmd.ExecuteNonQuery();
                         conn.Close();
                         MessageBox.Show("your order has been validated !");
                     }
