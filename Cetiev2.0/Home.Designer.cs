@@ -30,13 +30,6 @@ namespace Cetiev2._0
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rayonnage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Consummation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rest = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label_recherche_par_prjt = new System.Windows.Forms.Label();
             this.label_information_consommateurs = new System.Windows.Forms.Label();
@@ -59,6 +52,13 @@ namespace Cetiev2._0
             this.label2 = new System.Windows.Forms.Label();
             this.saveBtn = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.Reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rayonnage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Consummation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,55 +81,6 @@ namespace Cetiev2._0
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.validateData);
-            // 
-            // Reference
-            // 
-            this.Reference.HeaderText = "Reference";
-            this.Reference.MinimumWidth = 8;
-            this.Reference.Name = "Reference";
-            this.Reference.Width = 150;
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Description";
-            this.Description.MinimumWidth = 8;
-            this.Description.Name = "Description";
-            this.Description.Width = 150;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 8;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 150;
-            // 
-            // Rayonnage
-            // 
-            this.Rayonnage.HeaderText = "Rayonnage";
-            this.Rayonnage.MinimumWidth = 8;
-            this.Rayonnage.Name = "Rayonnage";
-            this.Rayonnage.Width = 150;
-            // 
-            // Consummation
-            // 
-            this.Consummation.HeaderText = "Consummation";
-            this.Consummation.MinimumWidth = 8;
-            this.Consummation.Name = "Consummation";
-            this.Consummation.Width = 150;
-            // 
-            // Rest
-            // 
-            this.Rest.HeaderText = "Rest";
-            this.Rest.MinimumWidth = 8;
-            this.Rest.Name = "Rest";
-            this.Rest.Width = 150;
-            // 
-            // ProjectName
-            // 
-            this.ProjectName.HeaderText = "Project Name";
-            this.ProjectName.MinimumWidth = 8;
-            this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Width = 150;
             // 
             // dateTimePicker1
             // 
@@ -375,6 +326,55 @@ namespace Cetiev2._0
             this.comboBox3.TabIndex = 42;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
+            // Reference
+            // 
+            this.Reference.HeaderText = "Référence PSA";
+            this.Reference.MinimumWidth = 8;
+            this.Reference.Name = "Reference";
+            this.Reference.Width = 150;
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Déscription";
+            this.Description.MinimumWidth = 8;
+            this.Description.Name = "Description";
+            this.Description.Width = 150;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantité";
+            this.Quantity.MinimumWidth = 8;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 150;
+            // 
+            // Rayonnage
+            // 
+            this.Rayonnage.HeaderText = "Rayonnage";
+            this.Rayonnage.MinimumWidth = 8;
+            this.Rayonnage.Name = "Rayonnage";
+            this.Rayonnage.Width = 150;
+            // 
+            // Consummation
+            // 
+            this.Consummation.HeaderText = "Consommation";
+            this.Consummation.MinimumWidth = 8;
+            this.Consummation.Name = "Consummation";
+            this.Consummation.Width = 150;
+            // 
+            // Rest
+            // 
+            this.Rest.HeaderText = "Reste";
+            this.Rest.MinimumWidth = 8;
+            this.Rest.Name = "Rest";
+            this.Rest.Width = 150;
+            // 
+            // ProjectName
+            // 
+            this.ProjectName.HeaderText = "Nom du projet";
+            this.ProjectName.MinimumWidth = 8;
+            this.ProjectName.Name = "ProjectName";
+            this.ProjectName.Width = 150;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -435,6 +435,7 @@ namespace Cetiev2._0
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button saveBtn;
+        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Reference;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
@@ -442,6 +443,5 @@ namespace Cetiev2._0
         private System.Windows.Forms.DataGridViewTextBoxColumn Consummation;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rest;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProjectName;
-        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

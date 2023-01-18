@@ -84,24 +84,10 @@ namespace Cetiev2._0
             //resizeChildrenControls();
         }
 
-        private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
-        {
-            //var excelApp = new Microsoft.Office.Interop.Excel.Application();
-
-            //var workbook = excelApp.Workbooks.Add();
-            //var worksheet = workbook.Worksheets.Add();
-
-            //for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            //{
-            //    for (int j = 0; j < dataGridView1.Columns.Count; j++)
-            //    {
-            //        excelApp.Cells[i + 1, j + 1] = dataGridView1[j, i].Value;
-            //    }
-            //}
-            //workbook.SaveAs(@"C:\Users\HP\Downloads\Qconsume.xlsx");
-
-            //excelApp.Quit();
-        }
+        //private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
+        //{
+           
+        //}
 
         private void QConsume_Load(object sender, EventArgs e)
         {
@@ -169,5 +155,10 @@ namespace Cetiev2._0
                 }
             }
         }
+
+        //private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }    
 }
