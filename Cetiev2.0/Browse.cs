@@ -49,7 +49,8 @@ namespace Cetiev2._0
                     read.GetValue(read.GetOrdinal("Rayonnage")),
                     read.GetValue(read.GetOrdinal("Consummation")),
                     read.GetValue(read.GetOrdinal("Rest")),
-                    read.GetValue(read.GetOrdinal("ProjectName"))
+                    read.GetValue(read.GetOrdinal("ProjectName")),
+                    read.GetValue(read.GetOrdinal("IdForn"))
                     });
                 }
             }

@@ -247,7 +247,8 @@ namespace Cetiev2._0
             read.GetValue(read.GetOrdinal("Rayonnage")),
             read.GetValue(read.GetOrdinal("Consummation")),
             read.GetValue(read.GetOrdinal("Rest")),
-            read.GetValue(read.GetOrdinal("ProjectName"))
+            read.GetValue(read.GetOrdinal("ProjectName")),
+            read.GetValue(read.GetOrdinal("IdForn"))
             });
                 }
             }
@@ -324,7 +325,8 @@ namespace Cetiev2._0
             read.GetValue(read.GetOrdinal("Rayonnage")),
             read.GetValue(read.GetOrdinal("Consummation")),
             read.GetValue(read.GetOrdinal("Rest")),
-            read.GetValue(read.GetOrdinal("ProjectName"))
+            read.GetValue(read.GetOrdinal("ProjectName")),
+            read.GetValue(read.GetOrdinal("IdForn"))
             });
                     }
                 }
@@ -348,7 +350,8 @@ namespace Cetiev2._0
                         read.GetValue(read.GetOrdinal("Rayonnage")),
                         read.GetValue(read.GetOrdinal("Consummation")),
                         read.GetValue(read.GetOrdinal("Rest")),
-                        read.GetValue(read.GetOrdinal("ProjectName"))
+                        read.GetValue(read.GetOrdinal("ProjectName")),
+                        read.GetValue(read.GetOrdinal("IdForn"))
                         });
                     }
                 }
@@ -390,13 +393,14 @@ namespace Cetiev2._0
 
 
             SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
-            SQLiteCommand updateCmd = new SQLiteCommand(@"Update ProjectDetails set Desciption =:Desciption,Quantity=:Quantity,Rayonnage=:Rayonnage,Consummation=:Consummation,Rest=:Rest,ProjectName=:ProjectName WHERE Reference=:Reference", conn);
+            SQLiteCommand updateCmd = new SQLiteCommand(@"Update ProjectDetails set Desciption =:Desciption,Quantity=:Quantity,Rayonnage=:Rayonnage,Consummation=:Consummation,Rest=:Rest,ProjectName=:ProjectName,IdForn=:IdForn WHERE Reference=:Reference", conn);
             updateCmd.Parameters.Add("Desciption", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[1].Value;
             updateCmd.Parameters.Add("Quantity", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[2].Value;
             updateCmd.Parameters.Add("Rayonnage", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[3].Value;
             updateCmd.Parameters.Add("Consummation", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[4].Value;
             updateCmd.Parameters.Add("Rest", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[5].Value;
             updateCmd.Parameters.Add("ProjectName", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[6].Value;
+            updateCmd.Parameters.Add("IdForn", DbType.String).Value = dataGridView1.Rows[selectedrowindex].Cells[7].Value;
 
             updateCmd.Parameters.Add("Reference", DbType.String).Value = Convert.ToString(selectedRow.Cells["Reference"].Value);
 
@@ -503,6 +507,16 @@ namespace Cetiev2._0
             SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
             List<string> results = h.getRefInfo(comboBox3.Text);
             List<string> consumed = h.getConsume(comboBox3.Text);
+            if (results.Count == 0 || consumed.Count == 0)
+            {
+                return;
+            }
+            if (textBox_Entrez_nom_complet.Text == "" || textBox_entrez_IE_IU.Text == "" || textBox_Nombre_des_pcs.Text == "" ||
+                comboBox3.Text == "")
+            {
+                MessageBox.Show("fields cannot be empty !");
+                return;
+            }
             SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO Consume (Name, IE, QtyWanted, Reference) 
                 VALUES ('" + textBox_Entrez_nom_complet.Text + "',' " + textBox_entrez_IE_IU.Text + "','"
             + textBox_Nombre_des_pcs.Text + "','" + comboBox3.Text + "')", conn);
@@ -515,18 +529,9 @@ namespace Cetiev2._0
             updateCmd.Parameters.Add("rest",DbType.String).Value = int.Parse(results[0]) - int.Parse(textBox_Nombre_des_pcs.Text);
             updateCmmd.Parameters.Add("Consummation", DbType.Int64).Value = int.Parse(consumed[0]) + int.Parse(textBox_Nombre_des_pcs.Text);
             updateCmmd.Parameters.Add("Reference", DbType.String).Value = comboBox3.Text;
-            //updateCmd.Parameters.Add("Reference", DbType.String).Value = comboBox3.Text;
+            updateCmd.Parameters.Add("Reference", DbType.String).Value = comboBox3.Text;
 
-            // insert the result of query into a tempo list
-
-
-            if (textBox_Entrez_nom_complet.Text == "" || textBox_entrez_IE_IU.Text == "" || textBox_Nombre_des_pcs.Text == "" ||
-                comboBox3.Text == "")
-            {
-                MessageBox.Show("fields cannot be empty !");
-            }
-           
-            else if (textBox_Nombre_des_pcs.Text != "")
+            if (textBox_Nombre_des_pcs.Text != "")
             {
                 if (results.Count > 0)
                 {

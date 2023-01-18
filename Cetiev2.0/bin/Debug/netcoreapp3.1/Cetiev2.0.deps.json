@@ -19,6 +19,7 @@
           "System.Data.SQLite": "1.0.116",
           "System.Text.Json": "7.0.0",
           "Uno.UI": "4.6.19",
+          "Microsoft.Office.interop.access.dao": "14.0.0.0",
           "Interop.LCC11": "1.0.0.0",
           "Interop.Microsoft.Office.Core": "2.8.0.0"
         },
@@ -1275,6 +1276,14 @@
           }
         }
       },
+      "Microsoft.Office.interop.access.dao/14.0.0.0": {
+        "runtime": {
+          "Microsoft.Office.interop.access.dao.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.4760.1000"
+          }
+        }
+      },
       "Interop.LCC11/1.0.0.0": {
         "runtime": {
           "Interop.LCC11.dll": {
@@ -2152,6 +2161,11 @@
       "sha512": "sha512-I4a6NRil5DWHB2FbxhPf5aUT0YHfm7ATjlnANuC1KtZh6W6LGPa2NHF8ZIv19gSbdIl5ctCBSmSomck82DykEw==",
       "path": "uno.ui/4.6.19",
       "hashPath": "uno.ui.4.6.19.nupkg.sha512"
+    },
+    "Microsoft.Office.interop.access.dao/14.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     },
     "Interop.LCC11/1.0.0.0": {
       "type": "reference",

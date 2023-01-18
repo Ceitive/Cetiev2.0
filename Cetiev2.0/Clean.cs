@@ -212,20 +212,20 @@ namespace Cetiev2._0
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
-            if (textBoxProjectName.Text == "")
+            if (textBoxProjectName.Text == "" || textBox1.Text == "")
             {
-                MessageBox.Show("le nom de project peut pas etre vide");
+                MessageBox.Show("le nom de project ou ID peut pas etre vide");
             }
             else
             {
                 for (int i = 0; i < dataGridView2.Rows.Count; i++)
                 {
                     SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
-                    SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO ProjectDetails (Reference, Desciption, Quantity, Rayonnage, Consummation, Rest, ProjectName) 
+                    SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO ProjectDetails (Reference, Desciption, Quantity, Rayonnage, Consummation, Rest, ProjectName, IdForn) 
                 VALUES ('" + dataGridView2.Rows[i].Cells[0].Value + "','" + dataGridView2.Rows[i].Cells[2].Value + "','"
                     + dataGridView2.Rows[i].Cells[1].Value + "','" + dataGridView2.Rows[i].Cells[3].Value +
                     "','" + dataGridView2.Rows[i].Cells[4].Value + "','" + dataGridView2.Rows[i].Cells[5].Value + "','" +
-                    textBoxProjectName.Text + "')", conn);
+                    textBoxProjectName.Text + "','" + textBox1.Text + "')", conn);
                     conn.Open();
                     cmd.ExecuteNonQuery();
                     conn.Close();
