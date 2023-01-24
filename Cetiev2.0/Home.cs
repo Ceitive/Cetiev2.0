@@ -1,6 +1,6 @@
-﻿using DocumentFormat.OpenXml.Spreadsheet;
-using IronXL;
-using Microsoft.Graph;
+﻿//using DocumentFormat.OpenXml.Spreadsheet;
+//using IronXL;
+//using Microsoft.Graph;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,9 +11,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SQLite;
-using Windows.UI.Xaml.Controls;
+//using Windows.UI.Xaml.Controls;
 using Application = System.Windows.Forms.Application;
-using Excel = Microsoft.Office.Interop.Excel;
+//using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Cetiev2._0
 {

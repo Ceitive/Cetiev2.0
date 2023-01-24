@@ -58,6 +58,16 @@ namespace Cetiev2._0
             h.Show();
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Browse_Load(object sender, EventArgs e)
+        {
+
+        }
+
         //private void Browse_Load(object sender, EventArgs e)
         //{   // Resize
         //    formOriginalSize = this.Size;

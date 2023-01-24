@@ -84,11 +84,6 @@ namespace Cetiev2._0
             //resizeChildrenControls();
         }
 
-        //private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
-        //{
-           
-        //}
-
         private void QConsume_Load(object sender, EventArgs e)
         {
             SQLiteConnection conn = new SQLiteConnection("Data Source=database.db");
@@ -155,10 +150,5 @@ namespace Cetiev2._0
                 }
             }
         }
-
-        //private void button_Imprimer_QConsume_Click(object sender, EventArgs e)
-        //{
-
-        //}
     }    
 }

@@ -37,8 +37,8 @@ namespace Cetiev2._0
             // 
             // ckeanData
             // 
-            this.ckeanData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ckeanData.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.ckeanData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ckeanData.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ckeanData.ForeColor = System.Drawing.Color.White;
             this.ckeanData.Location = new System.Drawing.Point(451, 553);
             this.ckeanData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -51,8 +51,8 @@ namespace Cetiev2._0
             // 
             // dataManipulation
             // 
-            this.dataManipulation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataManipulation.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.dataManipulation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.dataManipulation.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dataManipulation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataManipulation.Location = new System.Drawing.Point(1049, 553);
             this.dataManipulation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -65,7 +65,7 @@ namespace Cetiev2._0
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::Cetiev2._0.Properties.Resources.download__1__removebg_preview;
+            this.panel1.BackgroundImage = global::Cetiev2._0.Properties.Resources.download__1__removebg_preview__1_;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Location = new System.Drawing.Point(451, 251);
             this.panel1.Name = "panel1";
@@ -74,18 +74,19 @@ namespace Cetiev2._0
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Cetiev2._0.Properties.Resources._2413136_200;
+            this.panel2.BackgroundImage = global::Cetiev2._0.Properties.Resources._2413136_200__1_;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel2.Location = new System.Drawing.Point(1049, 251);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(387, 269);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Browse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1887, 985);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -94,8 +95,7 @@ namespace Cetiev2._0
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Browse";
             this.Text = "Browse";
-            //this.Load += new System.EventHandler(this.Browse_Load);
-            //this.Resize += new System.EventHandler(this.Browse_Resize);
+            this.Load += new System.EventHandler(this.Browse_Load);
             this.ResumeLayout(false);
 
         }

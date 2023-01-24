@@ -40,79 +40,75 @@ namespace Cetiev2._0
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button_back_clean = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rayonnage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Consumation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LeReste = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button_back_clean = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxProjectName
             // 
-            this.textBoxProjectName.Location = new System.Drawing.Point(717, 444);
-            this.textBoxProjectName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxProjectName.Location = new System.Drawing.Point(1099, 740);
             this.textBoxProjectName.Name = "textBoxProjectName";
-            this.textBoxProjectName.Size = new System.Drawing.Size(133, 23);
+            this.textBoxProjectName.Size = new System.Drawing.Size(196, 31);
             this.textBoxProjectName.TabIndex = 34;
             // 
             // label_entrez_nom_de_prjt
             // 
             this.label_entrez_nom_de_prjt.AutoSize = true;
-            this.label_entrez_nom_de_prjt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_entrez_nom_de_prjt.Location = new System.Drawing.Point(542, 442);
-            this.label_entrez_nom_de_prjt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_entrez_nom_de_prjt.Font = new System.Drawing.Font("Cooper Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_entrez_nom_de_prjt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_entrez_nom_de_prjt.Location = new System.Drawing.Point(756, 737);
             this.label_entrez_nom_de_prjt.Name = "label_entrez_nom_de_prjt";
-            this.label_entrez_nom_de_prjt.Size = new System.Drawing.Size(162, 21);
+            this.label_entrez_nom_de_prjt.Size = new System.Drawing.Size(337, 32);
             this.label_entrez_nom_de_prjt.TabIndex = 33;
-            this.label_entrez_nom_de_prjt.Text = "Entrez nom de projet :";
+            this.label_entrez_nom_de_prjt.Text = "Entrez nom de projet  :";
             // 
             // label_Ajouter_et_nettoyer_un_prjt
             // 
             this.label_Ajouter_et_nettoyer_un_prjt.AutoSize = true;
-            this.label_Ajouter_et_nettoyer_un_prjt.BackColor = System.Drawing.SystemColors.Control;
-            this.label_Ajouter_et_nettoyer_un_prjt.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label_Ajouter_et_nettoyer_un_prjt.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_Ajouter_et_nettoyer_un_prjt.Location = new System.Drawing.Point(549, 404);
-            this.label_Ajouter_et_nettoyer_un_prjt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_Ajouter_et_nettoyer_un_prjt.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Ajouter_et_nettoyer_un_prjt.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label_Ajouter_et_nettoyer_un_prjt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Ajouter_et_nettoyer_un_prjt.Location = new System.Drawing.Point(784, 673);
             this.label_Ajouter_et_nettoyer_un_prjt.Name = "label_Ajouter_et_nettoyer_un_prjt";
-            this.label_Ajouter_et_nettoyer_un_prjt.Size = new System.Drawing.Size(303, 30);
+            this.label_Ajouter_et_nettoyer_un_prjt.Size = new System.Drawing.Size(490, 36);
             this.label_Ajouter_et_nettoyer_un_prjt.TabIndex = 32;
             this.label_Ajouter_et_nettoyer_un_prjt.Text = "Ajouter et nettoyer un projet";
             // 
             // label_File_path
             // 
             this.label_File_path.AutoSize = true;
-            this.label_File_path.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_File_path.Location = new System.Drawing.Point(542, 497);
-            this.label_File_path.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_File_path.Font = new System.Drawing.Font("Cooper Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_File_path.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_File_path.Location = new System.Drawing.Point(756, 828);
             this.label_File_path.Name = "label_File_path";
-            this.label_File_path.Size = new System.Drawing.Size(76, 21);
+            this.label_File_path.Size = new System.Drawing.Size(157, 32);
             this.label_File_path.TabIndex = 31;
             this.label_File_path.Text = "File path :";
             // 
             // textBox_file_path
             // 
-            this.textBox_file_path.Location = new System.Drawing.Point(629, 499);
-            this.textBox_file_path.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_file_path.Location = new System.Drawing.Point(897, 828);
             this.textBox_file_path.Name = "textBox_file_path";
-            this.textBox_file_path.Size = new System.Drawing.Size(220, 23);
+            this.textBox_file_path.Size = new System.Drawing.Size(398, 31);
             this.textBox_file_path.TabIndex = 30;
             // 
             // Button_Save
             // 
-            this.Button_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_Save.BackColor = System.Drawing.Color.SteelBlue;
             this.Button_Save.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Save.ForeColor = System.Drawing.Color.White;
-            this.Button_Save.Location = new System.Drawing.Point(750, 530);
-            this.Button_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Save.Location = new System.Drawing.Point(1133, 883);
             this.Button_Save.Name = "Button_Save";
-            this.Button_Save.Size = new System.Drawing.Size(99, 25);
+            this.Button_Save.Size = new System.Drawing.Size(141, 42);
             this.Button_Save.TabIndex = 29;
             this.Button_Save.Text = "Enregistrer";
             this.Button_Save.UseVisualStyleBackColor = false;
@@ -120,13 +116,12 @@ namespace Cetiev2._0
             // 
             // Button_Upload
             // 
-            this.Button_Upload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_Upload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Button_Upload.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Upload.ForeColor = System.Drawing.Color.White;
-            this.Button_Upload.Location = new System.Drawing.Point(648, 530);
-            this.Button_Upload.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Upload.Location = new System.Drawing.Point(958, 883);
             this.Button_Upload.Name = "Button_Upload";
-            this.Button_Upload.Size = new System.Drawing.Size(98, 25);
+            this.Button_Upload.Size = new System.Drawing.Size(140, 42);
             this.Button_Upload.TabIndex = 28;
             this.Button_Upload.Text = "Nettoyer";
             this.Button_Upload.UseVisualStyleBackColor = false;
@@ -134,13 +129,12 @@ namespace Cetiev2._0
             // 
             // Button_browse
             // 
-            this.Button_browse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_browse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_browse.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_browse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_browse.Location = new System.Drawing.Point(542, 530);
-            this.Button_browse.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_browse.Location = new System.Drawing.Point(784, 883);
             this.Button_browse.Name = "Button_browse";
-            this.Button_browse.Size = new System.Drawing.Size(99, 25);
+            this.Button_browse.Size = new System.Drawing.Size(141, 42);
             this.Button_browse.TabIndex = 27;
             this.Button_browse.Text = "Joindre";
             this.Button_browse.UseVisualStyleBackColor = false;
@@ -151,20 +145,20 @@ namespace Cetiev2._0
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 25);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 42);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(963, 598);
             this.dataGridView1.TabIndex = 35;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1259, 629);
+            this.button1.Location = new System.Drawing.Point(1799, 1048);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 30);
+            this.button1.Size = new System.Drawing.Size(124, 50);
             this.button1.TabIndex = 36;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -182,45 +176,13 @@ namespace Cetiev2._0
             this.Rayonnage,
             this.Consumation,
             this.LeReste});
-            this.dataGridView2.Location = new System.Drawing.Point(705, 25);
+            this.dataGridView2.Location = new System.Drawing.Point(1007, 42);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(635, 359);
+            this.dataGridView2.Size = new System.Drawing.Size(907, 598);
             this.dataGridView2.TabIndex = 37;
-            // 
-            // button_back_clean
-            // 
-            this.button_back_clean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_back_clean.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button_back_clean.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_back_clean.Location = new System.Drawing.Point(8, 562);
-            this.button_back_clean.Margin = new System.Windows.Forms.Padding(2);
-            this.button_back_clean.Name = "button_back_clean";
-            this.button_back_clean.Size = new System.Drawing.Size(93, 25);
-            this.button_back_clean.TabIndex = 38;
-            this.button_back_clean.Text = "Retour";
-            this.button_back_clean.UseVisualStyleBackColor = false;
-            this.button_back_clean.Click += new System.EventHandler(this.button_back_clean_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(542, 470);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 21);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Entrez ID de Fourn... :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(717, 472);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 23);
-            this.textBox1.TabIndex = 40;
             // 
             // Reference
             // 
@@ -264,12 +226,43 @@ namespace Cetiev2._0
             this.LeReste.Name = "LeReste";
             this.LeReste.Width = 150;
             // 
+            // button_back_clean
+            // 
+            this.button_back_clean.BackColor = System.Drawing.Color.Red;
+            this.button_back_clean.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button_back_clean.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button_back_clean.Location = new System.Drawing.Point(11, 937);
+            this.button_back_clean.Name = "button_back_clean";
+            this.button_back_clean.Size = new System.Drawing.Size(133, 42);
+            this.button_back_clean.TabIndex = 38;
+            this.button_back_clean.Text = "Retour";
+            this.button_back_clean.UseVisualStyleBackColor = false;
+            this.button_back_clean.Click += new System.EventHandler(this.button_back_clean_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(756, 783);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(342, 32);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Entrez ID de Fourni...  :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(1099, 786);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(196, 31);
+            this.textBox1.TabIndex = 40;
+            // 
             // Clean
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1427, 563);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1924, 932);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_back_clean);
@@ -284,6 +277,7 @@ namespace Cetiev2._0
             this.Controls.Add(this.Button_Save);
             this.Controls.Add(this.Button_Upload);
             this.Controls.Add(this.Button_browse);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Clean";
             this.Text = "Clean";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

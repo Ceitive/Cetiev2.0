@@ -49,6 +49,7 @@ namespace Cetiev2._0
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Reference,
@@ -57,6 +58,7 @@ namespace Cetiev2._0
             this.Name,
             this.IE,
             this.dataGridViewTextBoxColumn1});
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(11, 66);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -66,7 +68,7 @@ namespace Cetiev2._0
             // 
             // Reference
             // 
-            this.Reference.HeaderText = "Reference";
+            this.Reference.HeaderText = "Référence PSA";
             this.Reference.MinimumWidth = 8;
             this.Reference.Name = "Reference";
             this.Reference.ReadOnly = true;
@@ -74,7 +76,7 @@ namespace Cetiev2._0
             // 
             // Description
             // 
-            this.Description.HeaderText = "Description";
+            this.Description.HeaderText = "Déscription";
             this.Description.MinimumWidth = 8;
             this.Description.Name = "Description";
             this.Description.ReadOnly = true;
@@ -82,7 +84,7 @@ namespace Cetiev2._0
             // 
             // Consume
             // 
-            this.Consume.HeaderText = "Consume";
+            this.Consume.HeaderText = "La Quantité Consommée";
             this.Consume.MinimumWidth = 8;
             this.Consume.Name = "Consume";
             this.Consume.ReadOnly = true;
@@ -90,7 +92,7 @@ namespace Cetiev2._0
             // 
             // Name
             // 
-            this.Name.HeaderText = "Name";
+            this.Name.HeaderText = "Le Nom de Consommateur";
             this.Name.MinimumWidth = 8;
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
@@ -98,7 +100,7 @@ namespace Cetiev2._0
             // 
             // IE
             // 
-            this.IE.HeaderText = "IE";
+            this.IE.HeaderText = "IE / IU de Consommateur";
             this.IE.MinimumWidth = 8;
             this.IE.Name = "IE";
             this.IE.ReadOnly = true;
@@ -106,7 +108,7 @@ namespace Cetiev2._0
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Project Name";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Le Nom de projet";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -114,7 +116,7 @@ namespace Cetiev2._0
             // 
             // button_back
             // 
-            this.button_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_back.BackColor = System.Drawing.Color.Red;
             this.button_back.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button_back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_back.Location = new System.Drawing.Point(11, 937);
@@ -127,12 +129,12 @@ namespace Cetiev2._0
             // 
             // Button_Rechercher_REF_QConume
             // 
-            this.Button_Rechercher_REF_QConume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Button_Rechercher_REF_QConume.BackColor = System.Drawing.Color.Teal;
             this.Button_Rechercher_REF_QConume.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Button_Rechercher_REF_QConume.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Rechercher_REF_QConume.Location = new System.Drawing.Point(746, 780);
+            this.Button_Rechercher_REF_QConume.Location = new System.Drawing.Point(746, 801);
             this.Button_Rechercher_REF_QConume.Name = "Button_Rechercher_REF_QConume";
-            this.Button_Rechercher_REF_QConume.Size = new System.Drawing.Size(409, 42);
+            this.Button_Rechercher_REF_QConume.Size = new System.Drawing.Size(409, 47);
             this.Button_Rechercher_REF_QConume.TabIndex = 45;
             this.Button_Rechercher_REF_QConume.Text = "Chercher";
             this.Button_Rechercher_REF_QConume.UseVisualStyleBackColor = false;
@@ -141,21 +143,22 @@ namespace Cetiev2._0
             // Label_Entrez_la_référence
             // 
             this.Label_Entrez_la_référence.AutoSize = true;
-            this.Label_Entrez_la_référence.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(746, 732);
+            this.Label_Entrez_la_référence.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Label_Entrez_la_référence.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Label_Entrez_la_référence.Location = new System.Drawing.Point(746, 751);
             this.Label_Entrez_la_référence.Name = "Label_Entrez_la_référence";
-            this.Label_Entrez_la_référence.Size = new System.Drawing.Size(154, 32);
+            this.Label_Entrez_la_référence.Size = new System.Drawing.Size(177, 27);
             this.Label_Entrez_la_référence.TabIndex = 43;
             this.Label_Entrez_la_référence.Text = "Entrez le réf :";
             // 
             // Label_Recherche_par_référence
             // 
             this.Label_Recherche_par_référence.AutoSize = true;
-            this.Label_Recherche_par_référence.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Label_Recherche_par_référence.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(770, 677);
+            this.Label_Recherche_par_référence.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.Label_Recherche_par_référence.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Label_Recherche_par_référence.Location = new System.Drawing.Point(746, 692);
             this.Label_Recherche_par_référence.Name = "Label_Recherche_par_référence";
-            this.Label_Recherche_par_référence.Size = new System.Drawing.Size(362, 45);
+            this.Label_Recherche_par_référence.Size = new System.Drawing.Size(412, 36);
             this.Label_Recherche_par_référence.TabIndex = 42;
             this.Label_Recherche_par_référence.Text = "Recherche par référence";
             // 
@@ -169,17 +172,18 @@ namespace Cetiev2._0
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(686, 12);
+            this.label2.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(725, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(318, 32);
+            this.label2.Size = new System.Drawing.Size(451, 36);
             this.label2.TabIndex = 49;
             this.label2.Text = "Tableau Quantité Consumé";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(894, 733);
+            this.comboBox1.Location = new System.Drawing.Point(917, 751);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(238, 33);
@@ -188,7 +192,7 @@ namespace Cetiev2._0
             // 
             // actualiserBtn
             // 
-            this.actualiserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.actualiserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.actualiserBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.actualiserBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.actualiserBtn.Location = new System.Drawing.Point(1795, 14);
@@ -204,6 +208,7 @@ namespace Cetiev2._0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1924, 1018);
             this.Controls.Add(this.actualiserBtn);
             this.Controls.Add(this.comboBox1);
@@ -231,14 +236,14 @@ namespace Cetiev2._0
         private System.Windows.Forms.Label Label_Recherche_par_référence;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button actualiserBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Reference;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn Consume;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn IE;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        public System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button actualiserBtn;
     }
 }

@@ -45,16 +45,12 @@ namespace Cetiev2._0
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // backgroundWorker1
-            // 
-            //this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            // 
             // button1_effacer
             // 
-            this.button1_effacer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1_effacer.BackColor = System.Drawing.Color.Red;
             this.button1_effacer.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button1_effacer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1_effacer.Location = new System.Drawing.Point(549, 563);
+            this.button1_effacer.Location = new System.Drawing.Point(549, 614);
             this.button1_effacer.Name = "button1_effacer";
             this.button1_effacer.Size = new System.Drawing.Size(162, 46);
             this.button1_effacer.TabIndex = 10;
@@ -65,10 +61,11 @@ namespace Cetiev2._0
             // ShowMotdepasse
             // 
             this.ShowMotdepasse.AutoSize = true;
-            this.ShowMotdepasse.Font = new System.Drawing.Font("Segoe UI Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ShowMotdepasse.Location = new System.Drawing.Point(719, 522);
+            this.ShowMotdepasse.Font = new System.Drawing.Font("Britannic Bold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ShowMotdepasse.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ShowMotdepasse.Location = new System.Drawing.Point(719, 573);
             this.ShowMotdepasse.Name = "ShowMotdepasse";
-            this.ShowMotdepasse.Size = new System.Drawing.Size(73, 25);
+            this.ShowMotdepasse.Size = new System.Drawing.Size(72, 21);
             this.ShowMotdepasse.TabIndex = 9;
             this.ShowMotdepasse.Text = "Show";
             this.ShowMotdepasse.UseVisualStyleBackColor = true;
@@ -77,7 +74,7 @@ namespace Cetiev2._0
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cetiev2._0.Properties.Resources._1638892306970;
-            this.pictureBox2.Location = new System.Drawing.Point(666, 309);
+            this.pictureBox2.Location = new System.Drawing.Point(666, 360);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(71, 70);
             this.pictureBox2.TabIndex = 2;
@@ -85,7 +82,7 @@ namespace Cetiev2._0
             // 
             // txtUtilisateur
             // 
-            this.txtUtilisateur.Location = new System.Drawing.Point(719, 406);
+            this.txtUtilisateur.Location = new System.Drawing.Point(719, 457);
             this.txtUtilisateur.Name = "txtUtilisateur";
             this.txtUtilisateur.Size = new System.Drawing.Size(163, 45);
             this.txtUtilisateur.TabIndex = 8;
@@ -93,30 +90,33 @@ namespace Cetiev2._0
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(549, 414);
+            this.label2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(549, 469);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 32);
+            this.label2.Size = new System.Drawing.Size(179, 27);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Utilisateur :";
+            this.label2.Text = "Utilisateur    :";
             // 
             // QuitterBtn
             // 
-            this.QuitterBtn.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.QuitterBtn.Location = new System.Drawing.Point(549, 639);
+            this.QuitterBtn.BackColor = System.Drawing.Color.Blue;
+            this.QuitterBtn.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.QuitterBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.QuitterBtn.Location = new System.Drawing.Point(549, 690);
             this.QuitterBtn.Name = "QuitterBtn";
-            this.QuitterBtn.Size = new System.Drawing.Size(333, 42);
+            this.QuitterBtn.Size = new System.Drawing.Size(333, 46);
             this.QuitterBtn.TabIndex = 6;
             this.QuitterBtn.Text = "Quitter";
-            this.QuitterBtn.UseVisualStyleBackColor = true;
+            this.QuitterBtn.UseVisualStyleBackColor = false;
             this.QuitterBtn.Click += new System.EventHandler(this.QuitterBtn_Click);
             // 
             // SeConnecter
             // 
-            this.SeConnecter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SeConnecter.BackColor = System.Drawing.Color.Lime;
             this.SeConnecter.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SeConnecter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SeConnecter.Location = new System.Drawing.Point(720, 563);
+            this.SeConnecter.Location = new System.Drawing.Point(720, 614);
             this.SeConnecter.Name = "SeConnecter";
             this.SeConnecter.Size = new System.Drawing.Size(162, 46);
             this.SeConnecter.TabIndex = 5;
@@ -126,7 +126,7 @@ namespace Cetiev2._0
             // 
             // txtMotdepasse
             // 
-            this.txtMotdepasse.Location = new System.Drawing.Point(719, 470);
+            this.txtMotdepasse.Location = new System.Drawing.Point(719, 521);
             this.txtMotdepasse.Name = "txtMotdepasse";
             this.txtMotdepasse.Size = new System.Drawing.Size(163, 45);
             this.txtMotdepasse.TabIndex = 4;
@@ -135,29 +135,30 @@ namespace Cetiev2._0
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(549, 478);
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(549, 533);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 32);
+            this.label3.Size = new System.Drawing.Size(177, 27);
             this.label3.TabIndex = 3;
             this.label3.Text = "Mot de passe :";
-            //this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(549, 235);
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(534, 290);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(477, 45);
+            this.label1.Size = new System.Drawing.Size(505, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenue M. Chouaib AABAR";
+            this.label1.Text = "Bienvenue M. CHOUAIB ABBAR";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cetiev2._0.Properties.Resources._1554374594171_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(520, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(520, 85);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(393, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,7 +169,7 @@ namespace Cetiev2._0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.button1_effacer);
             this.Controls.Add(this.pictureBox1);
